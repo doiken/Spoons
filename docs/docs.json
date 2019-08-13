@@ -1,0 +1,818 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+      {
+        "doc" : "Table of app name and enabled hot keys.\nDefault is all enabled.\nShould be set before SwitchableHotkey:init() called.\ne.g. \nspoon.SwitchableHotkey.acceptOnly = {\n  [\"Emacs\"] = {}, -- accept NONE\n  [\"iTerm2\"] = {  -- accept partially\n    {{'ctrl'}, ']'},\n  }\n  -- Hotkeys of apps not listed above are fully enabled\n}",
+        "desc" : "Table of app name and enabled hot keys.",
+        "def" : "SwitchableHotkey.acceptOnly",
+        "stripped_doc" : [
+          "Table of app name and enabled hot keys.",
+          "Default is all enabled.",
+          "Should be set before SwitchableHotkey:init() called.",
+          "e.g. ",
+          "spoon.SwitchableHotkey.acceptOnly = {",
+          "  [\"Emacs\"] = {}, -- accept NONE",
+          "  [\"iTerm2\"] = {  -- accept partially",
+          "    {{'ctrl'}, ']'},",
+          "  }",
+          "  -- Hotkeys of apps not listed above are fully enabled",
+          "}"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "SwitchableHotkey.acceptOnly",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "acceptOnly",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Internal Table for looking up accepted hotkeys.",
+        "desc" : "Internal Table for looking up accepted hotkeys.",
+        "def" : "SwitchableHotkey._acceptOnly",
+        "stripped_doc" : [
+          "Internal Table for looking up accepted hotkeys."
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "SwitchableHotkey._acceptOnly",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "_acceptOnly",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "stripped_doc" : [
+
+    ],
+    "desc" : "",
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "doc" : "Download: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/SwitchableHotkey.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/SwitchableHotkey.spoon.zip)",
+    "Method" : [
+      {
+        "doc" : "Binds hotkey\n\nParameters:\n * keyspec\n\nReturns:\n * SwitchableHotkey",
+        "desc" : "Binds hotkey",
+        "def" : "SwitchableHotkey:bindSpec()",
+        "stripped_doc" : [
+          "Binds hotkey",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "SwitchableHotkey:bindSpec()",
+        "type" : "Method",
+        "returns" : [
+          " * SwitchableHotkey"
+        ],
+        "name" : "bindSpec",
+        "parameters" : [
+          " * keyspec",
+          ""
+        ]
+      },
+      {
+        "doc" : "Start Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
+        "desc" : "Start Listener",
+        "def" : "SwitchableHotkey:start()",
+        "stripped_doc" : [
+          "Start Listener",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "SwitchableHotkey:start()",
+        "type" : "Method",
+        "returns" : [
+          " * SwitchableHotkey"
+        ],
+        "name" : "start",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Stop Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
+        "desc" : "Stop Listener",
+        "def" : "SwitchableHotkey:stop()",
+        "stripped_doc" : [
+          "Stop Listener",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "SwitchableHotkey:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * SwitchableHotkey"
+        ],
+        "name" : "stop",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
+        "desc" : "initializer",
+        "def" : "SwitchableHotkey:init()",
+        "stripped_doc" : [
+          "initializer",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "SwitchableHotkey:init()",
+        "type" : "Method",
+        "returns" : [
+          " * SwitchableHotkey"
+        ],
+        "name" : "init",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      }
+    ],
+    "Command" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Internal Table for looking up accepted hotkeys.",
+        "desc" : "Internal Table for looking up accepted hotkeys.",
+        "def" : "SwitchableHotkey._acceptOnly",
+        "stripped_doc" : [
+          "Internal Table for looking up accepted hotkeys."
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "SwitchableHotkey._acceptOnly",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "_acceptOnly",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Table of app name and enabled hot keys.\nDefault is all enabled.\nShould be set before SwitchableHotkey:init() called.\ne.g. \nspoon.SwitchableHotkey.acceptOnly = {\n  [\"Emacs\"] = {}, -- accept NONE\n  [\"iTerm2\"] = {  -- accept partially\n    {{'ctrl'}, ']'},\n  }\n  -- Hotkeys of apps not listed above are fully enabled\n}",
+        "desc" : "Table of app name and enabled hot keys.",
+        "def" : "SwitchableHotkey.acceptOnly",
+        "stripped_doc" : [
+          "Table of app name and enabled hot keys.",
+          "Default is all enabled.",
+          "Should be set before SwitchableHotkey:init() called.",
+          "e.g. ",
+          "spoon.SwitchableHotkey.acceptOnly = {",
+          "  [\"Emacs\"] = {}, -- accept NONE",
+          "  [\"iTerm2\"] = {  -- accept partially",
+          "    {{'ctrl'}, ']'},",
+          "  }",
+          "  -- Hotkeys of apps not listed above are fully enabled",
+          "}"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "SwitchableHotkey.acceptOnly",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "acceptOnly",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Binds hotkey\n\nParameters:\n * keyspec\n\nReturns:\n * SwitchableHotkey",
+        "desc" : "Binds hotkey",
+        "def" : "SwitchableHotkey:bindSpec()",
+        "stripped_doc" : [
+          "Binds hotkey",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "SwitchableHotkey:bindSpec()",
+        "type" : "Method",
+        "returns" : [
+          " * SwitchableHotkey"
+        ],
+        "name" : "bindSpec",
+        "parameters" : [
+          " * keyspec",
+          ""
+        ]
+      },
+      {
+        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
+        "desc" : "initializer",
+        "def" : "SwitchableHotkey:init()",
+        "stripped_doc" : [
+          "initializer",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "SwitchableHotkey:init()",
+        "type" : "Method",
+        "returns" : [
+          " * SwitchableHotkey"
+        ],
+        "name" : "init",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Start Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
+        "desc" : "Start Listener",
+        "def" : "SwitchableHotkey:start()",
+        "stripped_doc" : [
+          "Start Listener",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "SwitchableHotkey:start()",
+        "type" : "Method",
+        "returns" : [
+          " * SwitchableHotkey"
+        ],
+        "name" : "start",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Stop Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
+        "desc" : "Stop Listener",
+        "def" : "SwitchableHotkey:stop()",
+        "stripped_doc" : [
+          "Stop Listener",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "SwitchableHotkey:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * SwitchableHotkey"
+        ],
+        "name" : "stop",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      }
+    ],
+    "name" : "SwitchableHotkey"
+  },
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+      {
+        "doc" : "e.g.\nspoon.LastKeyRepeat.mapping = {\n  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },\n  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },\n}",
+        "desc" : "e.g.",
+        "def" : "LastKeyRepeat.mapping",
+        "stripped_doc" : [
+          "e.g.",
+          "spoon.LastKeyRepeat.mapping = {",
+          "  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },",
+          "  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },",
+          "}"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat.mapping",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "mapping",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "when to timeout 2nd stroke",
+        "desc" : "when to timeout 2nd stroke",
+        "def" : "LastKeyRepeat.mapping",
+        "stripped_doc" : [
+          "when to timeout 2nd stroke"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat.mapping",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "mapping",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Table of apps which you want to temporary disable LastKeyRepeat functions.\ne.g. \nspoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }",
+        "desc" : "Table of apps which you want to temporary disable LastKeyRepeat functions.",
+        "def" : "LastKeyRepeat.appsDisable",
+        "stripped_doc" : [
+          "Table of apps which you want to temporary disable LastKeyRepeat functions.",
+          "e.g. ",
+          "spoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat.appsDisable",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "appsDisable",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Internal Table for looking up disabled apps.",
+        "desc" : "Internal Table for looking up disabled apps.",
+        "def" : "LastKeyRepeat._appsDisable",
+        "stripped_doc" : [
+          "Internal Table for looking up disabled apps."
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat._appsDisable",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "_appsDisable",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "stripped_doc" : [
+
+    ],
+    "desc" : "tmux bind-key -r option-like function",
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "doc" : "tmux bind-key -r option-like function\n\nDownload: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/LastKeyRepeat.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/LastKeyRepeat.spoon.zip)\nthanks to this issue\nhttps:\/\/github.com\/Hammerspoon\/hammerspoon\/issues\/1128",
+    "Method" : [
+      {
+        "doc" : "Start waching eventtap and application\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
+        "desc" : "Start waching eventtap and application",
+        "def" : "LastKeyRepeat:start()",
+        "stripped_doc" : [
+          "Start waching eventtap and application",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat:start()",
+        "type" : "Method",
+        "returns" : [
+          " * LastKeyRepeat"
+        ],
+        "name" : "start",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "stop waching eventtap and application\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
+        "desc" : "stop waching eventtap and application",
+        "def" : "LastKeyRepeat:stop()",
+        "stripped_doc" : [
+          "stop waching eventtap and application",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * LastKeyRepeat"
+        ],
+        "name" : "stop",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
+        "desc" : "initializer",
+        "def" : "LastKeyRepeat:init()",
+        "stripped_doc" : [
+          "initializer",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat:init()",
+        "type" : "Method",
+        "returns" : [
+          " * LastKeyRepeat"
+        ],
+        "name" : "init",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      }
+    ],
+    "Command" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Internal Table for looking up disabled apps.",
+        "desc" : "Internal Table for looking up disabled apps.",
+        "def" : "LastKeyRepeat._appsDisable",
+        "stripped_doc" : [
+          "Internal Table for looking up disabled apps."
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat._appsDisable",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "_appsDisable",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Table of apps which you want to temporary disable LastKeyRepeat functions.\ne.g. \nspoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }",
+        "desc" : "Table of apps which you want to temporary disable LastKeyRepeat functions.",
+        "def" : "LastKeyRepeat.appsDisable",
+        "stripped_doc" : [
+          "Table of apps which you want to temporary disable LastKeyRepeat functions.",
+          "e.g. ",
+          "spoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat.appsDisable",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "appsDisable",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "e.g.\nspoon.LastKeyRepeat.mapping = {\n  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },\n  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },\n}",
+        "desc" : "e.g.",
+        "def" : "LastKeyRepeat.mapping",
+        "stripped_doc" : [
+          "e.g.",
+          "spoon.LastKeyRepeat.mapping = {",
+          "  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },",
+          "  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },",
+          "}"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat.mapping",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "mapping",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "when to timeout 2nd stroke",
+        "desc" : "when to timeout 2nd stroke",
+        "def" : "LastKeyRepeat.mapping",
+        "stripped_doc" : [
+          "when to timeout 2nd stroke"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat.mapping",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "mapping",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
+        "desc" : "initializer",
+        "def" : "LastKeyRepeat:init()",
+        "stripped_doc" : [
+          "initializer",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat:init()",
+        "type" : "Method",
+        "returns" : [
+          " * LastKeyRepeat"
+        ],
+        "name" : "init",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Start waching eventtap and application\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
+        "desc" : "Start waching eventtap and application",
+        "def" : "LastKeyRepeat:start()",
+        "stripped_doc" : [
+          "Start waching eventtap and application",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat:start()",
+        "type" : "Method",
+        "returns" : [
+          " * LastKeyRepeat"
+        ],
+        "name" : "start",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "stop waching eventtap and application\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
+        "desc" : "stop waching eventtap and application",
+        "def" : "LastKeyRepeat:stop()",
+        "stripped_doc" : [
+          "stop waching eventtap and application",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * LastKeyRepeat"
+        ],
+        "name" : "stop",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      }
+    ],
+    "name" : "LastKeyRepeat"
+  },
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+      {
+        "doc" : "Default key map",
+        "desc" : "Default key map",
+        "def" : "PseudoNumKey.hotkeys",
+        "stripped_doc" : [
+          "Default key map"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PseudoNumKey.hotkeys",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "hotkeys",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "stripped_doc" : [
+
+    ],
+    "desc" : "Pseudo numeric keypad with FN key for Mac",
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "doc" : "Pseudo numeric keypad with FN key for Mac\n\nDownload: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/PseudoNumKey.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/PseudoNumKey.spoon.zip)",
+    "Method" : [
+      {
+        "doc" : "Start Event Listener\n\nParameters:\n * None\n\nReturns:\n * None",
+        "desc" : "Start Event Listener",
+        "def" : "PseudoNumKey:start()",
+        "stripped_doc" : [
+          "Start Event Listener",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PseudoNumKey:start()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "start",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Stop Event Listener\n\nParameters:\n * None\n\nReturns:\n * None",
+        "desc" : "Stop Event Listener",
+        "def" : "PseudoNumKey:stop()",
+        "stripped_doc" : [
+          "Stop Event Listener",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PseudoNumKey:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "stop",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      }
+    ],
+    "Command" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Default key map",
+        "desc" : "Default key map",
+        "def" : "PseudoNumKey.hotkeys",
+        "stripped_doc" : [
+          "Default key map"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PseudoNumKey.hotkeys",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "hotkeys",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Start Event Listener\n\nParameters:\n * None\n\nReturns:\n * None",
+        "desc" : "Start Event Listener",
+        "def" : "PseudoNumKey:start()",
+        "stripped_doc" : [
+          "Start Event Listener",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PseudoNumKey:start()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "start",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Stop Event Listener\n\nParameters:\n * None\n\nReturns:\n * None",
+        "desc" : "Stop Event Listener",
+        "def" : "PseudoNumKey:stop()",
+        "stripped_doc" : [
+          "Stop Event Listener",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PseudoNumKey:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "stop",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      }
+    ],
+    "name" : "PseudoNumKey"
+  }
+]

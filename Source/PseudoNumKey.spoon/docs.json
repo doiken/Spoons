@@ -1,0 +1,166 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+      {
+        "doc" : "Default key map",
+        "desc" : "Default key map",
+        "def" : "PseudoNumKey.hotkeys",
+        "stripped_doc" : [
+          "Default key map"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PseudoNumKey.hotkeys",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "hotkeys",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "stripped_doc" : [
+
+    ],
+    "desc" : "Pseudo numeric keypad with FN key for Mac",
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "doc" : "Pseudo numeric keypad with FN key for Mac\n\nDownload: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/PseudoNumKey.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/PseudoNumKey.spoon.zip)",
+    "Method" : [
+      {
+        "doc" : "Start Event Listener\n\nParameters:\n * None\n\nReturns:\n * None",
+        "desc" : "Start Event Listener",
+        "def" : "PseudoNumKey:start()",
+        "stripped_doc" : [
+          "Start Event Listener",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PseudoNumKey:start()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "start",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Stop Event Listener\n\nParameters:\n * None\n\nReturns:\n * None",
+        "desc" : "Stop Event Listener",
+        "def" : "PseudoNumKey:stop()",
+        "stripped_doc" : [
+          "Stop Event Listener",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PseudoNumKey:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "stop",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      }
+    ],
+    "Command" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Default key map",
+        "desc" : "Default key map",
+        "def" : "PseudoNumKey.hotkeys",
+        "stripped_doc" : [
+          "Default key map"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PseudoNumKey.hotkeys",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "hotkeys",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Start Event Listener\n\nParameters:\n * None\n\nReturns:\n * None",
+        "desc" : "Start Event Listener",
+        "def" : "PseudoNumKey:start()",
+        "stripped_doc" : [
+          "Start Event Listener",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PseudoNumKey:start()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "start",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Stop Event Listener\n\nParameters:\n * None\n\nReturns:\n * None",
+        "desc" : "Stop Event Listener",
+        "def" : "PseudoNumKey:stop()",
+        "stripped_doc" : [
+          "Stop Event Listener",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "PseudoNumKey:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "stop",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      }
+    ],
+    "name" : "PseudoNumKey"
+  }
+]

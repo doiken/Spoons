@@ -1,0 +1,342 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+      {
+        "doc" : "e.g.\nspoon.LastKeyRepeat.mapping = {\n  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },\n  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },\n}",
+        "desc" : "e.g.",
+        "def" : "LastKeyRepeat.mapping",
+        "stripped_doc" : [
+          "e.g.",
+          "spoon.LastKeyRepeat.mapping = {",
+          "  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },",
+          "  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },",
+          "}"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat.mapping",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "mapping",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "when to timeout 2nd stroke",
+        "desc" : "when to timeout 2nd stroke",
+        "def" : "LastKeyRepeat.mapping",
+        "stripped_doc" : [
+          "when to timeout 2nd stroke"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat.mapping",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "mapping",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Table of apps which you want to temporary disable LastKeyRepeat functions.\ne.g. \nspoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }",
+        "desc" : "Table of apps which you want to temporary disable LastKeyRepeat functions.",
+        "def" : "LastKeyRepeat.appsDisable",
+        "stripped_doc" : [
+          "Table of apps which you want to temporary disable LastKeyRepeat functions.",
+          "e.g. ",
+          "spoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat.appsDisable",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "appsDisable",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Internal Table for looking up disabled apps.",
+        "desc" : "Internal Table for looking up disabled apps.",
+        "def" : "LastKeyRepeat._appsDisable",
+        "stripped_doc" : [
+          "Internal Table for looking up disabled apps."
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat._appsDisable",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "_appsDisable",
+        "parameters" : [
+
+        ]
+      }
+    ],
+    "stripped_doc" : [
+
+    ],
+    "desc" : "tmux bind-key -r option-like function",
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "Constructor" : [
+
+    ],
+    "doc" : "tmux bind-key -r option-like function\n\nDownload: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/LastKeyRepeat.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/LastKeyRepeat.spoon.zip)\nthanks to this issue\nhttps:\/\/github.com\/Hammerspoon\/hammerspoon\/issues\/1128",
+    "Method" : [
+      {
+        "doc" : "Start waching eventtap and application\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
+        "desc" : "Start waching eventtap and application",
+        "def" : "LastKeyRepeat:start()",
+        "stripped_doc" : [
+          "Start waching eventtap and application",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat:start()",
+        "type" : "Method",
+        "returns" : [
+          " * LastKeyRepeat"
+        ],
+        "name" : "start",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "stop waching eventtap and application\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
+        "desc" : "stop waching eventtap and application",
+        "def" : "LastKeyRepeat:stop()",
+        "stripped_doc" : [
+          "stop waching eventtap and application",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * LastKeyRepeat"
+        ],
+        "name" : "stop",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
+        "desc" : "initializer",
+        "def" : "LastKeyRepeat:init()",
+        "stripped_doc" : [
+          "initializer",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat:init()",
+        "type" : "Method",
+        "returns" : [
+          " * LastKeyRepeat"
+        ],
+        "name" : "init",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      }
+    ],
+    "Command" : [
+
+    ],
+    "Field" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Internal Table for looking up disabled apps.",
+        "desc" : "Internal Table for looking up disabled apps.",
+        "def" : "LastKeyRepeat._appsDisable",
+        "stripped_doc" : [
+          "Internal Table for looking up disabled apps."
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat._appsDisable",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "_appsDisable",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "Table of apps which you want to temporary disable LastKeyRepeat functions.\ne.g. \nspoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }",
+        "desc" : "Table of apps which you want to temporary disable LastKeyRepeat functions.",
+        "def" : "LastKeyRepeat.appsDisable",
+        "stripped_doc" : [
+          "Table of apps which you want to temporary disable LastKeyRepeat functions.",
+          "e.g. ",
+          "spoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat.appsDisable",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "appsDisable",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "e.g.\nspoon.LastKeyRepeat.mapping = {\n  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },\n  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },\n}",
+        "desc" : "e.g.",
+        "def" : "LastKeyRepeat.mapping",
+        "stripped_doc" : [
+          "e.g.",
+          "spoon.LastKeyRepeat.mapping = {",
+          "  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },",
+          "  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },",
+          "}"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat.mapping",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "mapping",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "when to timeout 2nd stroke",
+        "desc" : "when to timeout 2nd stroke",
+        "def" : "LastKeyRepeat.mapping",
+        "stripped_doc" : [
+          "when to timeout 2nd stroke"
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat.mapping",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "mapping",
+        "parameters" : [
+
+        ]
+      },
+      {
+        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
+        "desc" : "initializer",
+        "def" : "LastKeyRepeat:init()",
+        "stripped_doc" : [
+          "initializer",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat:init()",
+        "type" : "Method",
+        "returns" : [
+          " * LastKeyRepeat"
+        ],
+        "name" : "init",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "Start waching eventtap and application\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
+        "desc" : "Start waching eventtap and application",
+        "def" : "LastKeyRepeat:start()",
+        "stripped_doc" : [
+          "Start waching eventtap and application",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat:start()",
+        "type" : "Method",
+        "returns" : [
+          " * LastKeyRepeat"
+        ],
+        "name" : "start",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "doc" : "stop waching eventtap and application\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
+        "desc" : "stop waching eventtap and application",
+        "def" : "LastKeyRepeat:stop()",
+        "stripped_doc" : [
+          "stop waching eventtap and application",
+          ""
+        ],
+        "notes" : [
+
+        ],
+        "signature" : "LastKeyRepeat:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * LastKeyRepeat"
+        ],
+        "name" : "stop",
+        "parameters" : [
+          " * None",
+          ""
+        ]
+      }
+    ],
+    "name" : "LastKeyRepeat"
+  }
+]
