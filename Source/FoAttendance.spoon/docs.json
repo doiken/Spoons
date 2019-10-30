@@ -1,0 +1,216 @@
+[
+  {
+    "Constant" : [
+
+    ],
+    "submodules" : [
+
+    ],
+    "Function" : [
+
+    ],
+    "Variable" : [
+      {
+        "doc" : "Table of events and actions.\nEvents are all provided by caffeinate watcher.\n    ref: https:\/\/www.hammerspoon.org\/docs\/hs.caffeinate.watcher.html\nActios are \"attend\" or \"leave\".",
+        "stripped_doc" : [
+          "Table of events and actions.",
+          "Events are all provided by caffeinate watcher.",
+          "    ref: https:\/\/www.hammerspoon.org\/docs\/hs.caffeinate.watcher.html",
+          "Actios are \"attend\" or \"leave\"."
+        ],
+        "parameters" : [
+
+        ],
+        "desc" : "Table of events and actions.",
+        "notes" : [
+
+        ],
+        "signature" : "FoAttendance.events",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "events",
+        "def" : "FoAttendance.events"
+      }
+    ],
+    "stripped_doc" : [
+
+    ],
+    "Deprecated" : [
+
+    ],
+    "type" : "Module",
+    "desc" : "Very personal spoon to register my attendance.",
+    "Constructor" : [
+
+    ],
+    "doc" : "Very personal spoon to register my attendance.\n\nDownload: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/FoAttendance.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/FoAttendance.spoon.zip)",
+    "Method" : [
+      {
+        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "stripped_doc" : [
+          "initializer",
+          ""
+        ],
+        "parameters" : [
+          " * None",
+          ""
+        ],
+        "desc" : "initializer",
+        "notes" : [
+
+        ],
+        "signature" : "FoAttendance:init()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "init",
+        "def" : "FoAttendance:init()"
+      },
+      {
+        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "stripped_doc" : [
+          "initializer",
+          ""
+        ],
+        "parameters" : [
+          " * None",
+          ""
+        ],
+        "desc" : "initializer",
+        "notes" : [
+
+        ],
+        "signature" : "FoAttendance:start()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "start",
+        "def" : "FoAttendance:start()"
+      },
+      {
+        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "stripped_doc" : [
+          "initializer",
+          ""
+        ],
+        "parameters" : [
+          " * None",
+          ""
+        ],
+        "desc" : "initializer",
+        "notes" : [
+
+        ],
+        "signature" : "FoAttendance:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "stop",
+        "def" : "FoAttendance:stop()"
+      }
+    ],
+    "Command" : [
+
+    ],
+    "items" : [
+      {
+        "doc" : "Table of events and actions.\nEvents are all provided by caffeinate watcher.\n    ref: https:\/\/www.hammerspoon.org\/docs\/hs.caffeinate.watcher.html\nActios are \"attend\" or \"leave\".",
+        "stripped_doc" : [
+          "Table of events and actions.",
+          "Events are all provided by caffeinate watcher.",
+          "    ref: https:\/\/www.hammerspoon.org\/docs\/hs.caffeinate.watcher.html",
+          "Actios are \"attend\" or \"leave\"."
+        ],
+        "parameters" : [
+
+        ],
+        "desc" : "Table of events and actions.",
+        "notes" : [
+
+        ],
+        "signature" : "FoAttendance.events",
+        "type" : "Variable",
+        "returns" : [
+
+        ],
+        "name" : "events",
+        "def" : "FoAttendance.events"
+      },
+      {
+        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "stripped_doc" : [
+          "initializer",
+          ""
+        ],
+        "parameters" : [
+          " * None",
+          ""
+        ],
+        "desc" : "initializer",
+        "notes" : [
+
+        ],
+        "signature" : "FoAttendance:init()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "init",
+        "def" : "FoAttendance:init()"
+      },
+      {
+        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "stripped_doc" : [
+          "initializer",
+          ""
+        ],
+        "parameters" : [
+          " * None",
+          ""
+        ],
+        "desc" : "initializer",
+        "notes" : [
+
+        ],
+        "signature" : "FoAttendance:start()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "start",
+        "def" : "FoAttendance:start()"
+      },
+      {
+        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "stripped_doc" : [
+          "initializer",
+          ""
+        ],
+        "parameters" : [
+          " * None",
+          ""
+        ],
+        "desc" : "initializer",
+        "notes" : [
+
+        ],
+        "signature" : "FoAttendance:stop()",
+        "type" : "Method",
+        "returns" : [
+          " * None"
+        ],
+        "name" : "stop",
+        "def" : "FoAttendance:stop()"
+      }
+    ],
+    "Field" : [
+
+    ],
+    "name" : "FoAttendance"
+  }
+]
