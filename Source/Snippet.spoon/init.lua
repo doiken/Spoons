@@ -8,7 +8,7 @@ local obj = {}
 
 -- Metadata
 obj.name = "Snippet"
-obj.version = "1.0"
+obj.version = "1.1"
 obj.author = "doiken"
 obj.homepage = "https://github.com/doiken/Spoons"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
@@ -17,28 +17,37 @@ obj.license = "MIT - https://opensource.org/licenses/MIT"
 obj.logger = hs.logger.new('Snippet')
 -- Internal variable
 obj._chooser = nil
+-- Internal variable - Table of "hs" action function
+obj._fnMap = {}
 -- Internal variable - Cache for focused window to work around the current window losing focus after the chooser comes up
 obj._prevFocusedWindow = nil
 
 --- Snippet.snippets
 --- Variable
---- Table of snippet name and its contents.
 --- The format is bellow.
---- [SNIPPET_NAME] = { action = "ACTION_NAME", contents = "CONTENTS" }
---- SNIPPET_NAME is index to choose snippet.
---- Action is "text" or "shell".
+--- { text = "TEXT", action = "ACTION_NAME", contents = "CONTENTS" }
+--- TEXT is index to choose snippet.
+--- Action is "text" or "shell" or "hs".
 --- When action is text, CONTENTS is directly used.
 --- When action is shell, CONTENTS is evaluated as shell script.
+--- When action is hs, CONTENTS is called as hammerspoon function.
 --- e.g. 
 --- spoon.Snippet.snippets = {
----   ["temlate for greeting"] = {
+---   {
+---     text = "temlate for greeting",
 ---     action = "text",
 ---     contents = "Hello!",
 ---   },
----   ["echo greeting"] = {
+---   {
+---     text = "echo greeting",
 ---     action = "shell",
 ---     contents = "echo 'Hello!'",
----   }
+---   },
+---   {
+---     text = "notify greeting",
+---     action = "hs",
+---     contents = function () hs.notify.show("title", "", "") end,
+---   },
 --- }
 obj.snippets = {}
 
@@ -53,7 +62,7 @@ obj.snippets = {}
 ---  * None
 function obj:init()
   self._chooser = hs.chooser.new(hs.fnutils.partial(self._processSelectedItem, self))
-  self._chooser:choices(hs.fnutils.partial(self._populateChooser, self))
+  self._chooser:choices(self:_populateChooser())
   return obj
 end
 
@@ -62,6 +71,14 @@ function obj:_processSelectedItem(value)
       none = function() end,
       text = function(v) return v.contents end,
       shell = function(v) return hs.execute(v.contents) end,
+      hs = function(v)
+         local res = obj._fnMap[v.contents]()
+         if type(res) == "string" then
+            return res
+         else
+            return
+         end
+      end,
    }
    if self._prevFocusedWindow ~= nil then
       self._prevFocusedWindow:focus()
@@ -80,9 +97,15 @@ function obj:_processSelectedItem(value)
 end
 
 function obj:_populateChooser()
-   menuData = {}
-   for k,v in pairs(self.snippets) do
-      table.insert(menuData, {text=k, subText=v.action, action=v.action, contents=v.contents})
+   local menuData = {}
+
+   for _,v in ipairs(self.snippets) do
+      if v.action == "hs" then
+         local hash = hs.hash.MD5(debug.getinfo(v.contents, "S").source)
+         self._fnMap[hash] = v.contents
+         v.contents = hash
+      end
+      table.insert(menuData, v)
    end
    if #menuData == 0 then
       table.insert(menuData, { text="",

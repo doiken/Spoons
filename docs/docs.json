@@ -816,281 +816,231 @@
     "name" : "PseudoNumKey"
   },
   {
-    "Constant" : [
-
-    ],
-    "submodules" : [
-
-    ],
-    "Function" : [
-
-    ],
-    "Variable" : [
+    "Constant": [],
+    "submodules": [],
+    "Function": [],
+    "Variable": [
       {
-        "doc" : "Table of snippet name and its contents.\nThe format is bellow.\n[SNIPPET_NAME] = { action = \"ACTION_NAME\", contents = \"CONTENTS\" }\nSNIPPET_NAME is index to choose snippet.\nAction is \"text\" or \"shell\".\nWhen action is text, CONTENTS is directly used.\nWhen action is shell, CONTENTS is evaluated as shell script.\ne.g. \nspoon.Snippet.snippets = {\n  [\"temlate for greeting\"] = {\n    action = \"text\",\n    contents = \"Hello!\",\n  },\n  [\"echo greeting\"] = {\n    action = \"shell\",\n    contents = \"echo 'Hello!'\",\n  }\n}",
-        "stripped_doc" : [
-          "Table of snippet name and its contents.",
+        "desc": "The format is bellow.",
+        "name": "snippets",
+        "doc": "The format is bellow.\n{ text = \"TEXT\", action = \"ACTION_NAME\", contents = \"CONTENTS\" }\nTEXT is index to choose snippet.\nAction is \"text\" or \"shell\" or \"hs\".\nWhen action is text, CONTENTS is directly used.\nWhen action is shell, CONTENTS is evaluated as shell script.\nWhen action is hs, CONTENTS is called as hammerspoon function.\ne.g. \nspoon.Snippet.snippets = {\n  {\n    text = \"temlate for greeting\",\n    action = \"text\",\n    contents = \"Hello!\",\n  },\n  {\n    text = \"echo greeting\",\n    action = \"shell\",\n    contents = \"echo 'Hello!'\",\n  },\n  {\n    text = \"notify greeting\",\n    action = \"hs\",\n    contents = function () hs.notify.show(\"title\", \"\", \"\") end,\n  },\n}",
+        "stripped_doc": [
           "The format is bellow.",
-          "[SNIPPET_NAME] = { action = \"ACTION_NAME\", contents = \"CONTENTS\" }",
-          "SNIPPET_NAME is index to choose snippet.",
-          "Action is \"text\" or \"shell\".",
+          "{ text = \"TEXT\", action = \"ACTION_NAME\", contents = \"CONTENTS\" }",
+          "TEXT is index to choose snippet.",
+          "Action is \"text\" or \"shell\" or \"hs\".",
           "When action is text, CONTENTS is directly used.",
           "When action is shell, CONTENTS is evaluated as shell script.",
+          "When action is hs, CONTENTS is called as hammerspoon function.",
           "e.g. ",
           "spoon.Snippet.snippets = {",
-          "  [\"temlate for greeting\"] = {",
+          "  {",
+          "    text = \"temlate for greeting\",",
           "    action = \"text\",",
           "    contents = \"Hello!\",",
           "  },",
-          "  [\"echo greeting\"] = {",
+          "  {",
+          "    text = \"echo greeting\",",
           "    action = \"shell\",",
           "    contents = \"echo 'Hello!'\",",
-          "  }",
+          "  },",
+          "  {",
+          "    text = \"notify greeting\",",
+          "    action = \"hs\",",
+          "    contents = function () hs.notify.show(\"title\", \"\", \"\") end,",
+          "  },",
           "}"
         ],
-        "parameters" : [
-
-        ],
-        "desc" : "Table of snippet name and its contents.",
-        "notes" : [
-
-        ],
-        "signature" : "Snippet.snippets",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "snippets",
-        "def" : "Snippet.snippets"
+        "notes": [],
+        "signature": "Snippet.snippets",
+        "type": "Variable",
+        "returns": [],
+        "def": "Snippet.snippets",
+        "parameters": []
       }
     ],
-    "stripped_doc" : [
-
-    ],
-    "Deprecated" : [
-
-    ],
-    "type" : "Module",
-    "desc" : "",
-    "Constructor" : [
-
-    ],
-    "doc" : "Download: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/Snippet.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/Snippet.spoon.zip)",
-    "Field" : [
-
-    ],
-    "Command" : [
-
-    ],
-    "Method" : [
+    "stripped_doc": [],
+    "Deprecated": [],
+    "type": "Module",
+    "desc": "Manage snippets.",
+    "Constructor": [],
+    "items": [
       {
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "stripped_doc" : [
-          "initializer",
-          ""
-        ],
-        "parameters" : [
-          " * None",
-          ""
-        ],
-        "desc" : "initializer",
-        "notes" : [
-
-        ],
-        "signature" : "Snippet:init()",
-        "type" : "Method",
-        "returns" : [
-          " * None"
-        ],
-        "name" : "init",
-        "def" : "Snippet:init()"
-      },
-      {
-        "doc" : "Display the snippet list in a chooser",
-        "stripped_doc" : [
-          "Display the snippet list in a chooser"
-        ],
-        "parameters" : [
-
-        ],
-        "desc" : "Display the snippet list in a chooser",
-        "notes" : [
-
-        ],
-        "signature" : "Snippet:showSnippet()",
-        "type" : "Method",
-        "returns" : [
-
-        ],
-        "name" : "showSnippet",
-        "def" : "Snippet:showSnippet()"
-      },
-      {
-        "doc" : "Show\/hide the snippet list, depending on its current state",
-        "stripped_doc" : [
-          "Show\/hide the snippet list, depending on its current state"
-        ],
-        "parameters" : [
-
-        ],
-        "desc" : "Show\/hide the snippet list, depending on its current state",
-        "notes" : [
-
-        ],
-        "signature" : "Snippet:toggleSnippet()",
-        "type" : "Method",
-        "returns" : [
-
-        ],
-        "name" : "toggleSnippet",
-        "def" : "Snippet:toggleSnippet()"
-      },
-      {
-        "doc" : "Binds hotkeys for Snippet\n\nParameters:\n * mapping - A table containing hotkey objifier\/key details for the following items:\n  * show_snippet - Display the snippet chooser\n  * toggle_snippet - Show\/hide the snippet chooser",
-        "stripped_doc" : [
-          "Binds hotkeys for Snippet",
-          ""
-        ],
-        "parameters" : [
-          " * mapping - A table containing hotkey objifier\/key details for the following items:",
-          "  * show_snippet - Display the snippet chooser",
-          "  * toggle_snippet - Show\/hide the snippet chooser"
-        ],
-        "desc" : "Binds hotkeys for Snippet",
-        "notes" : [
-
-        ],
-        "signature" : "Snippet:bindHotkeys(mapping)",
-        "type" : "Method",
-        "returns" : [
-
-        ],
-        "name" : "bindHotkeys",
-        "def" : "Snippet:bindHotkeys(mapping)"
-      }
-    ],
-    "items" : [
-      {
-        "doc" : "Table of snippet name and its contents.\nThe format is bellow.\n[SNIPPET_NAME] = { action = \"ACTION_NAME\", contents = \"CONTENTS\" }\nSNIPPET_NAME is index to choose snippet.\nAction is \"text\" or \"shell\".\nWhen action is text, CONTENTS is directly used.\nWhen action is shell, CONTENTS is evaluated as shell script.\ne.g. \nspoon.Snippet.snippets = {\n  [\"temlate for greeting\"] = {\n    action = \"text\",\n    contents = \"Hello!\",\n  },\n  [\"echo greeting\"] = {\n    action = \"shell\",\n    contents = \"echo 'Hello!'\",\n  }\n}",
-        "stripped_doc" : [
-          "Table of snippet name and its contents.",
+        "desc": "The format is bellow.",
+        "name": "snippets",
+        "doc": "The format is bellow.\n{ text = \"TEXT\", action = \"ACTION_NAME\", contents = \"CONTENTS\" }\nTEXT is index to choose snippet.\nAction is \"text\" or \"shell\" or \"hs\".\nWhen action is text, CONTENTS is directly used.\nWhen action is shell, CONTENTS is evaluated as shell script.\nWhen action is hs, CONTENTS is called as hammerspoon function.\ne.g. \nspoon.Snippet.snippets = {\n  {\n    text = \"temlate for greeting\",\n    action = \"text\",\n    contents = \"Hello!\",\n  },\n  {\n    text = \"echo greeting\",\n    action = \"shell\",\n    contents = \"echo 'Hello!'\",\n  },\n  {\n    text = \"notify greeting\",\n    action = \"hs\",\n    contents = function () hs.notify.show(\"title\", \"\", \"\") end,\n  },\n}",
+        "stripped_doc": [
           "The format is bellow.",
-          "[SNIPPET_NAME] = { action = \"ACTION_NAME\", contents = \"CONTENTS\" }",
-          "SNIPPET_NAME is index to choose snippet.",
-          "Action is \"text\" or \"shell\".",
+          "{ text = \"TEXT\", action = \"ACTION_NAME\", contents = \"CONTENTS\" }",
+          "TEXT is index to choose snippet.",
+          "Action is \"text\" or \"shell\" or \"hs\".",
           "When action is text, CONTENTS is directly used.",
           "When action is shell, CONTENTS is evaluated as shell script.",
+          "When action is hs, CONTENTS is called as hammerspoon function.",
           "e.g. ",
           "spoon.Snippet.snippets = {",
-          "  [\"temlate for greeting\"] = {",
+          "  {",
+          "    text = \"temlate for greeting\",",
           "    action = \"text\",",
           "    contents = \"Hello!\",",
           "  },",
-          "  [\"echo greeting\"] = {",
+          "  {",
+          "    text = \"echo greeting\",",
           "    action = \"shell\",",
           "    contents = \"echo 'Hello!'\",",
-          "  }",
+          "  },",
+          "  {",
+          "    text = \"notify greeting\",",
+          "    action = \"hs\",",
+          "    contents = function () hs.notify.show(\"title\", \"\", \"\") end,",
+          "  },",
           "}"
         ],
-        "parameters" : [
-
-        ],
-        "desc" : "Table of snippet name and its contents.",
-        "notes" : [
-
-        ],
-        "signature" : "Snippet.snippets",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "snippets",
-        "def" : "Snippet.snippets"
+        "notes": [],
+        "signature": "Snippet.snippets",
+        "type": "Variable",
+        "returns": [],
+        "def": "Snippet.snippets",
+        "parameters": []
       },
       {
-        "doc" : "Binds hotkeys for Snippet\n\nParameters:\n * mapping - A table containing hotkey objifier\/key details for the following items:\n  * show_snippet - Display the snippet chooser\n  * toggle_snippet - Show\/hide the snippet chooser",
-        "stripped_doc" : [
+        "desc": "Binds hotkeys for Snippet",
+        "name": "bindHotkeys",
+        "doc": "Binds hotkeys for Snippet\n\nParameters:\n * mapping - A table containing hotkey objifier\/key details for the following items:\n  * show_snippet - Display the snippet chooser\n  * toggle_snippet - Show\/hide the snippet chooser",
+        "stripped_doc": [
           "Binds hotkeys for Snippet",
           ""
         ],
-        "parameters" : [
+        "notes": [],
+        "signature": "Snippet:bindHotkeys(mapping)",
+        "type": "Method",
+        "returns": [],
+        "def": "Snippet:bindHotkeys(mapping)",
+        "parameters": [
           " * mapping - A table containing hotkey objifier\/key details for the following items:",
           "  * show_snippet - Display the snippet chooser",
           "  * toggle_snippet - Show\/hide the snippet chooser"
-        ],
-        "desc" : "Binds hotkeys for Snippet",
-        "notes" : [
-
-        ],
-        "signature" : "Snippet:bindHotkeys(mapping)",
-        "type" : "Method",
-        "returns" : [
-
-        ],
-        "name" : "bindHotkeys",
-        "def" : "Snippet:bindHotkeys(mapping)"
+        ]
       },
       {
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "stripped_doc" : [
+        "desc": "initializer",
+        "name": "init",
+        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "stripped_doc": [
           "initializer",
           ""
         ],
-        "parameters" : [
-          " * None",
-          ""
-        ],
-        "desc" : "initializer",
-        "notes" : [
-
-        ],
-        "signature" : "Snippet:init()",
-        "type" : "Method",
-        "returns" : [
+        "notes": [],
+        "signature": "Snippet:init()",
+        "type": "Method",
+        "returns": [
           " * None"
         ],
-        "name" : "init",
-        "def" : "Snippet:init()"
+        "def": "Snippet:init()",
+        "parameters": [
+          " * None",
+          ""
+        ]
       },
       {
-        "doc" : "Display the snippet list in a chooser",
-        "stripped_doc" : [
+        "desc": "Display the snippet list in a chooser",
+        "name": "showSnippet",
+        "doc": "Display the snippet list in a chooser",
+        "stripped_doc": [
           "Display the snippet list in a chooser"
         ],
-        "parameters" : [
-
-        ],
-        "desc" : "Display the snippet list in a chooser",
-        "notes" : [
-
-        ],
-        "signature" : "Snippet:showSnippet()",
-        "type" : "Method",
-        "returns" : [
-
-        ],
-        "name" : "showSnippet",
-        "def" : "Snippet:showSnippet()"
+        "notes": [],
+        "signature": "Snippet:showSnippet()",
+        "type": "Method",
+        "returns": [],
+        "def": "Snippet:showSnippet()",
+        "parameters": []
       },
       {
-        "doc" : "Show\/hide the snippet list, depending on its current state",
-        "stripped_doc" : [
+        "desc": "Show\/hide the snippet list, depending on its current state",
+        "name": "toggleSnippet",
+        "doc": "Show\/hide the snippet list, depending on its current state",
+        "stripped_doc": [
           "Show\/hide the snippet list, depending on its current state"
         ],
-        "parameters" : [
-
+        "notes": [],
+        "signature": "Snippet:toggleSnippet()",
+        "type": "Method",
+        "returns": [],
+        "def": "Snippet:toggleSnippet()",
+        "parameters": []
+      }
+    ],
+    "Field": [],
+    "Command": [],
+    "doc": "Manage snippets.\n\nDownload: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/Snippet.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/Snippet.spoon.zip)",
+    "Method": [
+      {
+        "desc": "initializer",
+        "name": "init",
+        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "stripped_doc": [
+          "initializer",
+          ""
         ],
-        "desc" : "Show\/hide the snippet list, depending on its current state",
-        "notes" : [
-
+        "notes": [],
+        "signature": "Snippet:init()",
+        "type": "Method",
+        "returns": [
+          " * None"
         ],
-        "signature" : "Snippet:toggleSnippet()",
-        "type" : "Method",
-        "returns" : [
-
+        "def": "Snippet:init()",
+        "parameters": [
+          " * None",
+          ""
+        ]
+      },
+      {
+        "desc": "Display the snippet list in a chooser",
+        "name": "showSnippet",
+        "doc": "Display the snippet list in a chooser",
+        "stripped_doc": [
+          "Display the snippet list in a chooser"
         ],
-        "name" : "toggleSnippet",
-        "def" : "Snippet:toggleSnippet()"
+        "notes": [],
+        "signature": "Snippet:showSnippet()",
+        "type": "Method",
+        "returns": [],
+        "def": "Snippet:showSnippet()",
+        "parameters": []
+      },
+      {
+        "desc": "Show\/hide the snippet list, depending on its current state",
+        "name": "toggleSnippet",
+        "doc": "Show\/hide the snippet list, depending on its current state",
+        "stripped_doc": [
+          "Show\/hide the snippet list, depending on its current state"
+        ],
+        "notes": [],
+        "signature": "Snippet:toggleSnippet()",
+        "type": "Method",
+        "returns": [],
+        "def": "Snippet:toggleSnippet()",
+        "parameters": []
+      },
+      {
+        "desc": "Binds hotkeys for Snippet",
+        "name": "bindHotkeys",
+        "doc": "Binds hotkeys for Snippet\n\nParameters:\n * mapping - A table containing hotkey objifier\/key details for the following items:\n  * show_snippet - Display the snippet chooser\n  * toggle_snippet - Show\/hide the snippet chooser",
+        "stripped_doc": [
+          "Binds hotkeys for Snippet",
+          ""
+        ],
+        "notes": [],
+        "signature": "Snippet:bindHotkeys(mapping)",
+        "type": "Method",
+        "returns": [],
+        "def": "Snippet:bindHotkeys(mapping)",
+        "parameters": [
+          " * mapping - A table containing hotkey objifier\/key details for the following items:",
+          "  * show_snippet - Display the snippet chooser",
+          "  * toggle_snippet - Show\/hide the snippet chooser"
+        ]
       }
     ],
     "name" : "Snippet"
