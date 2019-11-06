@@ -83,7 +83,6 @@ local function processSelectedItem(value)
       obj._prevFocusedWindow:focus()
    end
    if value and type(value) == "table" then
-      obj.logger:e(hs.inspect(value))
       if value.action and actions[value.action] then
         contents = actions[value.action](value)
         if contents then
