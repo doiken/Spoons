@@ -1,6 +1,6 @@
 --- === SwitchableHotkey ===
 ---
---- 
+--- HotKeys to which you can switch by each application.
 ---
 --- Download: [https://github.com/doiken/Spoons/raw/master/Spoons/SwitchableHotkey.spoon.zip](https://github.com/doiken/Spoons/raw/master/Spoons/SwitchableHotkey.spoon.zip)
 
