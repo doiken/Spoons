@@ -26,4 +26,4 @@ for source in $(ls -d */ | perl -pe 's|/$||g' | xargs echo); do
         zip -Xr ../Spoons/${source}.zip ./${source}
     )
 done
-echo $json | /usr/local/bin/jq --sort-keys --slurp . > "${root_dir}/docs/docs.json"
+echo $json | /usr/local/bin/jq --sort-keys --slurp add > "${root_dir}/docs/docs.json"
