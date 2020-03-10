@@ -16,7 +16,7 @@ cd $source_dir
 json=""
 for source in $(ls -d */ | perl -pe 's|/$||g' | xargs echo); do
     d=${source_dir}/${source}
-    json="${json} $(hs -c "hs.doc.builder.genJSON('${d}')" | grep -v "^--" | tee ${d}/docs.json)"
+    json="${json} $(hs -c "hs.doc.builder.genJSON('${d}')" | grep -v "^--" | /usr/local/bin/jq --sort-keys | tee ${d}/docs.json)"
 
     (
         zip -r ../Spoons/${source}.zip ./${source}
