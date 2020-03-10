@@ -1,1325 +1,1120 @@
 [
-  {
-    "Constant" : [
-
-    ],
-    "submodules" : [
-
-    ],
-    "Function" : [
-
-    ],
-    "Variable" : [
-      {
-        "doc" : "Table of app name and enabled hot keys.\nDefault is all enabled.\nShould be set before SwitchableHotkey:init() called.\ne.g. \nspoon.SwitchableHotkey.acceptOnly = {\n  [\"Emacs\"] = {}, -- accept NONE\n  [\"iTerm2\"] = {  -- accept partially\n    {{'ctrl'}, ']'},\n  }\n  -- Hotkeys of apps not listed above are fully enabled\n}",
-        "desc" : "Table of app name and enabled hot keys.",
-        "def" : "SwitchableHotkey.acceptOnly",
-        "stripped_doc" : [
-          "Table of app name and enabled hot keys.",
-          "Default is all enabled.",
-          "Should be set before SwitchableHotkey:init() called.",
-          "e.g. ",
-          "spoon.SwitchableHotkey.acceptOnly = {",
-          "  [\"Emacs\"] = {}, -- accept NONE",
-          "  [\"iTerm2\"] = {  -- accept partially",
-          "    {{'ctrl'}, ']'},",
-          "  }",
-          "  -- Hotkeys of apps not listed above are fully enabled",
-          "}"
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey.acceptOnly",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "acceptOnly",
-        "parameters" : [
-
-        ]
-      },
-      {
-        "doc" : "Internal Table for looking up accepted hotkeys.",
-        "desc" : "Internal Table for looking up accepted hotkeys.",
-        "def" : "SwitchableHotkey._acceptOnly",
-        "stripped_doc" : [
-          "Internal Table for looking up accepted hotkeys."
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey._acceptOnly",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "_acceptOnly",
-        "parameters" : [
-
-        ]
-      }
-    ],
-    "stripped_doc" : [
-
-    ],
-    "desc" : "",
-    "Deprecated" : [
-
-    ],
-    "type" : "Module",
-    "Constructor" : [
-
-    ],
-    "doc" : "Download: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/SwitchableHotkey.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/SwitchableHotkey.spoon.zip)",
-    "Method" : [
-      {
-        "doc" : "Binds hotkey\n\nParameters:\n * keyspec\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "Binds hotkey",
-        "def" : "SwitchableHotkey:bindSpec()",
-        "stripped_doc" : [
-          "Binds hotkey",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:bindSpec()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "bindSpec",
-        "parameters" : [
-          " * keyspec",
-          ""
-        ]
-      },
-      {
-        "doc" : "Start Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "Start Listener",
-        "def" : "SwitchableHotkey:start()",
-        "stripped_doc" : [
-          "Start Listener",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:start()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "start",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      },
-      {
-        "doc" : "Stop Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "Stop Listener",
-        "def" : "SwitchableHotkey:stop()",
-        "stripped_doc" : [
-          "Stop Listener",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:stop()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "stop",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      },
-      {
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "initializer",
-        "def" : "SwitchableHotkey:init()",
-        "stripped_doc" : [
-          "initializer",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:init()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "init",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      }
-    ],
-    "Command" : [
-
-    ],
-    "Field" : [
-
-    ],
-    "items" : [
-      {
-        "doc" : "Internal Table for looking up accepted hotkeys.",
-        "desc" : "Internal Table for looking up accepted hotkeys.",
-        "def" : "SwitchableHotkey._acceptOnly",
-        "stripped_doc" : [
-          "Internal Table for looking up accepted hotkeys."
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey._acceptOnly",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "_acceptOnly",
-        "parameters" : [
-
-        ]
-      },
-      {
-        "doc" : "Table of app name and enabled hot keys.\nDefault is all enabled.\nShould be set before SwitchableHotkey:init() called.\ne.g. \nspoon.SwitchableHotkey.acceptOnly = {\n  [\"Emacs\"] = {}, -- accept NONE\n  [\"iTerm2\"] = {  -- accept partially\n    {{'ctrl'}, ']'},\n  }\n  -- Hotkeys of apps not listed above are fully enabled\n}",
-        "desc" : "Table of app name and enabled hot keys.",
-        "def" : "SwitchableHotkey.acceptOnly",
-        "stripped_doc" : [
-          "Table of app name and enabled hot keys.",
-          "Default is all enabled.",
-          "Should be set before SwitchableHotkey:init() called.",
-          "e.g. ",
-          "spoon.SwitchableHotkey.acceptOnly = {",
-          "  [\"Emacs\"] = {}, -- accept NONE",
-          "  [\"iTerm2\"] = {  -- accept partially",
-          "    {{'ctrl'}, ']'},",
-          "  }",
-          "  -- Hotkeys of apps not listed above are fully enabled",
-          "}"
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey.acceptOnly",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "acceptOnly",
-        "parameters" : [
-
-        ]
-      },
-      {
-        "doc" : "Binds hotkey\n\nParameters:\n * keyspec\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "Binds hotkey",
-        "def" : "SwitchableHotkey:bindSpec()",
-        "stripped_doc" : [
-          "Binds hotkey",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:bindSpec()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "bindSpec",
-        "parameters" : [
-          " * keyspec",
-          ""
-        ]
-      },
-      {
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "initializer",
-        "def" : "SwitchableHotkey:init()",
-        "stripped_doc" : [
-          "initializer",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:init()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "init",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      },
-      {
-        "doc" : "Start Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "Start Listener",
-        "def" : "SwitchableHotkey:start()",
-        "stripped_doc" : [
-          "Start Listener",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:start()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "start",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      },
-      {
-        "doc" : "Stop Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "Stop Listener",
-        "def" : "SwitchableHotkey:stop()",
-        "stripped_doc" : [
-          "Stop Listener",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:stop()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "stop",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      }
-    ],
-    "name" : "SwitchableHotkey"
-  },
-  {
-    "Constant" : [
-
-    ],
-    "submodules" : [
-
-    ],
-    "Function" : [
-
-    ],
-    "Variable" : [
-      {
-        "doc" : "e.g.\nspoon.LastKeyRepeat.mapping = {\n  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },\n  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },\n}",
-        "desc" : "e.g.",
-        "def" : "LastKeyRepeat.mapping",
-        "stripped_doc" : [
-          "e.g.",
-          "spoon.LastKeyRepeat.mapping = {",
-          "  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },",
-          "  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },",
-          "}"
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat.mapping",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "mapping",
-        "parameters" : [
-
-        ]
-      },
-      {
-        "doc" : "when to timeout 2nd stroke",
-        "desc" : "when to timeout 2nd stroke",
-        "def" : "LastKeyRepeat.mapping",
-        "stripped_doc" : [
-          "when to timeout 2nd stroke"
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat.mapping",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "mapping",
-        "parameters" : [
-
-        ]
-      },
-      {
-        "doc" : "Table of apps which you want to temporary disable LastKeyRepeat functions.\ne.g. \nspoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }",
-        "desc" : "Table of apps which you want to temporary disable LastKeyRepeat functions.",
-        "def" : "LastKeyRepeat.appsDisable",
-        "stripped_doc" : [
-          "Table of apps which you want to temporary disable LastKeyRepeat functions.",
-          "e.g. ",
-          "spoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }"
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat.appsDisable",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "appsDisable",
-        "parameters" : [
-
-        ]
-      },
-      {
-        "doc" : "Internal Table for looking up disabled apps.",
-        "desc" : "Internal Table for looking up disabled apps.",
-        "def" : "LastKeyRepeat._appsDisable",
-        "stripped_doc" : [
-          "Internal Table for looking up disabled apps."
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat._appsDisable",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "_appsDisable",
-        "parameters" : [
-
-        ]
-      }
-    ],
-    "stripped_doc" : [
-
-    ],
-    "desc" : "tmux bind-key -r option-like function",
-    "Deprecated" : [
-
-    ],
-    "type" : "Module",
-    "Constructor" : [
-
-    ],
-    "doc" : "tmux bind-key -r option-like function\n\nDownload: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/LastKeyRepeat.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/LastKeyRepeat.spoon.zip)\nthanks to this issue\nhttps:\/\/github.com\/Hammerspoon\/hammerspoon\/issues\/1128",
-    "Method" : [
-      {
-        "doc" : "Start waching eventtap and application\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
-        "desc" : "Start waching eventtap and application",
-        "def" : "LastKeyRepeat:start()",
-        "stripped_doc" : [
-          "Start waching eventtap and application",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat:start()",
-        "type" : "Method",
-        "returns" : [
-          " * LastKeyRepeat"
-        ],
-        "name" : "start",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      },
-      {
-        "doc" : "stop waching eventtap and application\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
-        "desc" : "stop waching eventtap and application",
-        "def" : "LastKeyRepeat:stop()",
-        "stripped_doc" : [
-          "stop waching eventtap and application",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat:stop()",
-        "type" : "Method",
-        "returns" : [
-          " * LastKeyRepeat"
-        ],
-        "name" : "stop",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      },
-      {
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
-        "desc" : "initializer",
-        "def" : "LastKeyRepeat:init()",
-        "stripped_doc" : [
-          "initializer",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat:init()",
-        "type" : "Method",
-        "returns" : [
-          " * LastKeyRepeat"
-        ],
-        "name" : "init",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      }
-    ],
-    "Command" : [
-
-    ],
-    "Field" : [
-
-    ],
-    "items" : [
-      {
-        "doc" : "Internal Table for looking up disabled apps.",
-        "desc" : "Internal Table for looking up disabled apps.",
-        "def" : "LastKeyRepeat._appsDisable",
-        "stripped_doc" : [
-          "Internal Table for looking up disabled apps."
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat._appsDisable",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "_appsDisable",
-        "parameters" : [
-
-        ]
-      },
-      {
-        "doc" : "Table of apps which you want to temporary disable LastKeyRepeat functions.\ne.g. \nspoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }",
-        "desc" : "Table of apps which you want to temporary disable LastKeyRepeat functions.",
-        "def" : "LastKeyRepeat.appsDisable",
-        "stripped_doc" : [
-          "Table of apps which you want to temporary disable LastKeyRepeat functions.",
-          "e.g. ",
-          "spoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }"
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat.appsDisable",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "appsDisable",
-        "parameters" : [
-
-        ]
-      },
-      {
-        "doc" : "e.g.\nspoon.LastKeyRepeat.mapping = {\n  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },\n  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },\n}",
-        "desc" : "e.g.",
-        "def" : "LastKeyRepeat.mapping",
-        "stripped_doc" : [
-          "e.g.",
-          "spoon.LastKeyRepeat.mapping = {",
-          "  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },",
-          "  { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },",
-          "}"
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat.mapping",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "mapping",
-        "parameters" : [
-
-        ]
-      },
-      {
-        "doc" : "when to timeout 2nd stroke",
-        "desc" : "when to timeout 2nd stroke",
-        "def" : "LastKeyRepeat.mapping",
-        "stripped_doc" : [
-          "when to timeout 2nd stroke"
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat.mapping",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "mapping",
-        "parameters" : [
-
-        ]
-      },
-      {
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
-        "desc" : "initializer",
-        "def" : "LastKeyRepeat:init()",
-        "stripped_doc" : [
-          "initializer",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat:init()",
-        "type" : "Method",
-        "returns" : [
-          " * LastKeyRepeat"
-        ],
-        "name" : "init",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      },
-      {
-        "doc" : "Start waching eventtap and application\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
-        "desc" : "Start waching eventtap and application",
-        "def" : "LastKeyRepeat:start()",
-        "stripped_doc" : [
-          "Start waching eventtap and application",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat:start()",
-        "type" : "Method",
-        "returns" : [
-          " * LastKeyRepeat"
-        ],
-        "name" : "start",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      },
-      {
-        "doc" : "stop waching eventtap and application\n\nParameters:\n * None\n\nReturns:\n * LastKeyRepeat",
-        "desc" : "stop waching eventtap and application",
-        "def" : "LastKeyRepeat:stop()",
-        "stripped_doc" : [
-          "stop waching eventtap and application",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "LastKeyRepeat:stop()",
-        "type" : "Method",
-        "returns" : [
-          " * LastKeyRepeat"
-        ],
-        "name" : "stop",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      }
-    ],
-    "name" : "LastKeyRepeat"
-  },
-  {
-    "Constant" : [
-
-    ],
-    "submodules" : [
-
-    ],
-    "Function" : [
-
-    ],
-    "Variable" : [
-      {
-        "doc" : "Default key map",
-        "desc" : "Default key map",
-        "def" : "PseudoNumKey.hotkeys",
-        "stripped_doc" : [
-          "Default key map"
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "PseudoNumKey.hotkeys",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "hotkeys",
-        "parameters" : [
-
-        ]
-      }
-    ],
-    "stripped_doc" : [
-
-    ],
-    "desc" : "Pseudo numeric keypad with FN key for Mac",
-    "Deprecated" : [
-
-    ],
-    "type" : "Module",
-    "Constructor" : [
-
-    ],
-    "doc" : "Pseudo numeric keypad with FN key for Mac\n\nDownload: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/PseudoNumKey.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/PseudoNumKey.spoon.zip)",
-    "Method" : [
-      {
-        "doc" : "Start Event Listener\n\nParameters:\n * None\n\nReturns:\n * None",
-        "desc" : "Start Event Listener",
-        "def" : "PseudoNumKey:start()",
-        "stripped_doc" : [
-          "Start Event Listener",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "PseudoNumKey:start()",
-        "type" : "Method",
-        "returns" : [
-          " * None"
-        ],
-        "name" : "start",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      },
-      {
-        "doc" : "Stop Event Listener\n\nParameters:\n * None\n\nReturns:\n * None",
-        "desc" : "Stop Event Listener",
-        "def" : "PseudoNumKey:stop()",
-        "stripped_doc" : [
-          "Stop Event Listener",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "PseudoNumKey:stop()",
-        "type" : "Method",
-        "returns" : [
-          " * None"
-        ],
-        "name" : "stop",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      }
-    ],
-    "Command" : [
-
-    ],
-    "Field" : [
-
-    ],
-    "items" : [
-      {
-        "doc" : "Default key map",
-        "desc" : "Default key map",
-        "def" : "PseudoNumKey.hotkeys",
-        "stripped_doc" : [
-          "Default key map"
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "PseudoNumKey.hotkeys",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "hotkeys",
-        "parameters" : [
-
-        ]
-      },
-      {
-        "doc" : "Start Event Listener\n\nParameters:\n * None\n\nReturns:\n * None",
-        "desc" : "Start Event Listener",
-        "def" : "PseudoNumKey:start()",
-        "stripped_doc" : [
-          "Start Event Listener",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "PseudoNumKey:start()",
-        "type" : "Method",
-        "returns" : [
-          " * None"
-        ],
-        "name" : "start",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      },
-      {
-        "doc" : "Stop Event Listener\n\nParameters:\n * None\n\nReturns:\n * None",
-        "desc" : "Stop Event Listener",
-        "def" : "PseudoNumKey:stop()",
-        "stripped_doc" : [
-          "Stop Event Listener",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "PseudoNumKey:stop()",
-        "type" : "Method",
-        "returns" : [
-          " * None"
-        ],
-        "name" : "stop",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      }
-    ],
-    "name" : "PseudoNumKey"
-  },
-  {
-    "Constant": [],
-    "submodules": [],
-    "Function": [],
-    "Variable": [
-      {
-        "desc": "The format is bellow.",
-        "parameters": [],
-        "stripped_doc": [
-          "The format is bellow.",
-          "{ text = \"TEXT\", action = \"ACTION_NAME\", contents = \"CONTENTS\" }",
-          "TEXT is index to choose snippet.",
-          "Action is \"text\" or \"shell\" or \"hs\" or \"nest\".",
-          "When action is text, CONTENTS is directly used.",
-          "When action is shell, CONTENTS is evaluated as shell script.",
-          "When action is hs, CONTENTS is called as hammerspoon function.",
-          "When action is nest, CONTENTS is table of nested snippets.",
-          "e.g. ",
-          "spoon.Snippet.snippets = {",
-          "  {",
-          "    text = \"temlate for greeting\",",
-          "    action = \"text\",",
-          "    contents = \"Hello!\",",
-          "  },",
-          "  {",
-          "    text = \"echo greeting\",",
-          "    action = \"shell\",",
-          "    contents = \"echo 'Hello!'\",",
-          "  },",
-          "  {",
-          "    text = \"notify greeting\",",
-          "    action = \"hs\",",
-          "    contents = function () hs.notify.show(\"title\", \"\", \"\") end,",
-          "  },",
-          "  {",
-          "    text = \"nest greet\",",
-          "    action = \"nest\",",
-          "    contents = {",
-          "      {",
-          "        text = \"nested greeting\",",
-          "        action = \"text\",",
-          "        contents = \"nested Hello!\",",
-          "      },",
-          "    },",
-          "  },",
-          "}"
-        ],
-        "doc": "The format is bellow.\n{ text = \"TEXT\", action = \"ACTION_NAME\", contents = \"CONTENTS\" }\nTEXT is index to choose snippet.\nAction is \"text\" or \"shell\" or \"hs\" or \"nest\".\nWhen action is text, CONTENTS is directly used.\nWhen action is shell, CONTENTS is evaluated as shell script.\nWhen action is hs, CONTENTS is called as hammerspoon function.\nWhen action is nest, CONTENTS is table of nested snippets.\ne.g. \nspoon.Snippet.snippets = {\n  {\n    text = \"temlate for greeting\",\n    action = \"text\",\n    contents = \"Hello!\",\n  },\n  {\n    text = \"echo greeting\",\n    action = \"shell\",\n    contents = \"echo 'Hello!'\",\n  },\n  {\n    text = \"notify greeting\",\n    action = \"hs\",\n    contents = function () hs.notify.show(\"title\", \"\", \"\") end,\n  },\n  {\n    text = \"nest greet\",\n    action = \"nest\",\n    contents = {\n      {\n        text = \"nested greeting\",\n        action = \"text\",\n        contents = \"nested Hello!\",\n      },\n    },\n  },\n}",
-        "notes": [],
-        "signature": "Snippet.snippets",
-        "type": "Variable",
-        "returns": [],
-        "def": "Snippet.snippets",
-        "name": "snippets"
-      }
-    ],
-    "stripped_doc": [],
-    "Deprecated": [],
-    "desc": "Manage snippets.",
-    "type": "Module",
-    "Constructor": [],
-    "items": [
-      {
-        "desc": "The format is bellow.",
-        "parameters": [],
-        "stripped_doc": [
-          "The format is bellow.",
-          "{ text = \"TEXT\", action = \"ACTION_NAME\", contents = \"CONTENTS\" }",
-          "TEXT is index to choose snippet.",
-          "Action is \"text\" or \"shell\" or \"hs\" or \"nest\".",
-          "When action is text, CONTENTS is directly used.",
-          "When action is shell, CONTENTS is evaluated as shell script.",
-          "When action is hs, CONTENTS is called as hammerspoon function.",
-          "When action is nest, CONTENTS is table of nested snippets.",
-          "e.g. ",
-          "spoon.Snippet.snippets = {",
-          "  {",
-          "    text = \"temlate for greeting\",",
-          "    action = \"text\",",
-          "    contents = \"Hello!\",",
-          "  },",
-          "  {",
-          "    text = \"echo greeting\",",
-          "    action = \"shell\",",
-          "    contents = \"echo 'Hello!'\",",
-          "  },",
-          "  {",
-          "    text = \"notify greeting\",",
-          "    action = \"hs\",",
-          "    contents = function () hs.notify.show(\"title\", \"\", \"\") end,",
-          "  },",
-          "  {",
-          "    text = \"nest greet\",",
-          "    action = \"nest\",",
-          "    contents = {",
-          "      {",
-          "        text = \"nested greeting\",",
-          "        action = \"text\",",
-          "        contents = \"nested Hello!\",",
-          "      },",
-          "    },",
-          "  },",
-          "}"
-        ],
-        "doc": "The format is bellow.\n{ text = \"TEXT\", action = \"ACTION_NAME\", contents = \"CONTENTS\" }\nTEXT is index to choose snippet.\nAction is \"text\" or \"shell\" or \"hs\" or \"nest\".\nWhen action is text, CONTENTS is directly used.\nWhen action is shell, CONTENTS is evaluated as shell script.\nWhen action is hs, CONTENTS is called as hammerspoon function.\nWhen action is nest, CONTENTS is table of nested snippets.\ne.g. \nspoon.Snippet.snippets = {\n  {\n    text = \"temlate for greeting\",\n    action = \"text\",\n    contents = \"Hello!\",\n  },\n  {\n    text = \"echo greeting\",\n    action = \"shell\",\n    contents = \"echo 'Hello!'\",\n  },\n  {\n    text = \"notify greeting\",\n    action = \"hs\",\n    contents = function () hs.notify.show(\"title\", \"\", \"\") end,\n  },\n  {\n    text = \"nest greet\",\n    action = \"nest\",\n    contents = {\n      {\n        text = \"nested greeting\",\n        action = \"text\",\n        contents = \"nested Hello!\",\n      },\n    },\n  },\n}",
-        "notes": [],
-        "signature": "Snippet.snippets",
-        "type": "Variable",
-        "returns": [],
-        "def": "Snippet.snippets",
-        "name": "snippets"
-      },
-      {
-        "desc": "Binds hotkeys for Snippet",
-        "parameters": [
-          " * mapping - A table containing hotkey objifier\/key details for the following items:",
-          "  * show_snippet - Display the snippet chooser",
-          "  * toggle_snippet - Show\/hide the snippet chooser"
-        ],
-        "stripped_doc": [
-          "Binds hotkeys for Snippet",
-          ""
-        ],
-        "doc": "Binds hotkeys for Snippet\n\nParameters:\n * mapping - A table containing hotkey objifier\/key details for the following items:\n  * show_snippet - Display the snippet chooser\n  * toggle_snippet - Show\/hide the snippet chooser",
-        "notes": [],
-        "signature": "Snippet:bindHotkeys(mapping)",
-        "type": "Method",
-        "returns": [],
-        "def": "Snippet:bindHotkeys(mapping)",
-        "name": "bindHotkeys"
-      },
-      {
-        "desc": "initializer",
-        "parameters": [
-          " * None",
-          ""
-        ],
-        "stripped_doc": [
-          "initializer",
-          ""
-        ],
-        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "notes": [],
-        "signature": "Snippet:init()",
-        "type": "Method",
-        "returns": [
-          " * None"
-        ],
-        "def": "Snippet:init()",
-        "name": "init"
-      },
-      {
-        "desc": "Display the snippet list in a chooser",
-        "parameters": [],
-        "stripped_doc": [
-          "Display the snippet list in a chooser"
-        ],
-        "doc": "Display the snippet list in a chooser",
-        "notes": [],
-        "signature": "Snippet:showSnippet()",
-        "type": "Method",
-        "returns": [],
-        "def": "Snippet:showSnippet()",
-        "name": "showSnippet"
-      },
-      {
-        "desc": "Show\/hide the snippet list, depending on its current state",
-        "parameters": [],
-        "stripped_doc": [
-          "Show\/hide the snippet list, depending on its current state"
-        ],
-        "doc": "Show\/hide the snippet list, depending on its current state",
-        "notes": [],
-        "signature": "Snippet:toggleSnippet()",
-        "type": "Method",
-        "returns": [],
-        "def": "Snippet:toggleSnippet()",
-        "name": "toggleSnippet"
-      }
-    ],
-    "Method": [
-      {
-        "desc": "initializer",
-        "parameters": [
-          " * None",
-          ""
-        ],
-        "stripped_doc": [
-          "initializer",
-          ""
-        ],
-        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "notes": [],
-        "signature": "Snippet:init()",
-        "type": "Method",
-        "returns": [
-          " * None"
-        ],
-        "def": "Snippet:init()",
-        "name": "init"
-      },
-      {
-        "desc": "Display the snippet list in a chooser",
-        "parameters": [],
-        "stripped_doc": [
-          "Display the snippet list in a chooser"
-        ],
-        "doc": "Display the snippet list in a chooser",
-        "notes": [],
-        "signature": "Snippet:showSnippet()",
-        "type": "Method",
-        "returns": [],
-        "def": "Snippet:showSnippet()",
-        "name": "showSnippet"
-      },
-      {
-        "desc": "Show\/hide the snippet list, depending on its current state",
-        "parameters": [],
-        "stripped_doc": [
-          "Show\/hide the snippet list, depending on its current state"
-        ],
-        "doc": "Show\/hide the snippet list, depending on its current state",
-        "notes": [],
-        "signature": "Snippet:toggleSnippet()",
-        "type": "Method",
-        "returns": [],
-        "def": "Snippet:toggleSnippet()",
-        "name": "toggleSnippet"
-      },
-      {
-        "desc": "Binds hotkeys for Snippet",
-        "parameters": [
-          " * mapping - A table containing hotkey objifier\/key details for the following items:",
-          "  * show_snippet - Display the snippet chooser",
-          "  * toggle_snippet - Show\/hide the snippet chooser"
-        ],
-        "stripped_doc": [
-          "Binds hotkeys for Snippet",
-          ""
-        ],
-        "doc": "Binds hotkeys for Snippet\n\nParameters:\n * mapping - A table containing hotkey objifier\/key details for the following items:\n  * show_snippet - Display the snippet chooser\n  * toggle_snippet - Show\/hide the snippet chooser",
-        "notes": [],
-        "signature": "Snippet:bindHotkeys(mapping)",
-        "type": "Method",
-        "returns": [],
-        "def": "Snippet:bindHotkeys(mapping)",
-        "name": "bindHotkeys"
-      }
-    ],
-    "Command": [],
-    "Field": [],
-    "doc": "Manage snippets.\n\nDownload: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/Snippet.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/Snippet.spoon.zip)",
-    "name": "Snippet"
-  },
-  {
-    "Constant": [],
-    "submodules": [],
-    "Function": [],
-    "Variable": [
-      {
-        "name": "events",
-        "stripped_doc": [
-          "Table of events and actions.",
-          "Events are all provided by caffeinate watcher.",
-          "    ref: https:\/\/www.hammerspoon.org\/docs\/hs.caffeinate.watcher.html",
-          "Actios are \"attend\" or \"leave\"."
-        ],
-        "doc": "Table of events and actions.\nEvents are all provided by caffeinate watcher.\n    ref: https:\/\/www.hammerspoon.org\/docs\/hs.caffeinate.watcher.html\nActios are \"attend\" or \"leave\".",
-        "parameters": [],
-        "notes": [],
-        "signature": "FoAttendance.events",
-        "type": "Variable",
-        "returns": [],
-        "def": "FoAttendance.events",
-        "desc": "Table of events and actions."
-      }
-    ],
-    "stripped_doc": [],
-    "type": "Module",
-    "Deprecated": [],
-    "desc": "Very personal spoon to register my attendance.",
-    "Constructor": [],
-    "items": [
-      {
-        "name": "events",
-        "stripped_doc": [
-          "Table of events and actions.",
-          "Events are all provided by caffeinate watcher.",
-          "    ref: https:\/\/www.hammerspoon.org\/docs\/hs.caffeinate.watcher.html",
-          "Actios are \"attend\" or \"leave\"."
-        ],
-        "doc": "Table of events and actions.\nEvents are all provided by caffeinate watcher.\n    ref: https:\/\/www.hammerspoon.org\/docs\/hs.caffeinate.watcher.html\nActios are \"attend\" or \"leave\".",
-        "parameters": [],
-        "notes": [],
-        "signature": "FoAttendance.events",
-        "type": "Variable",
-        "returns": [],
-        "def": "FoAttendance.events",
-        "desc": "Table of events and actions."
-      },
-      {
-        "name": "bindHotkeys",
-        "stripped_doc": [
-          "Binds hotkeys",
-          ""
-        ],
-        "doc": "Binds hotkeys\n\nParameters:\n * mapping - A table containing hotkey objifier\/key details for the following items:\n  * start - Start this module\n  * stop - Stop this module\n  * toggle - Toggle this module",
-        "parameters": [
-          " * mapping - A table containing hotkey objifier\/key details for the following items:",
-          "  * start - Start this module",
-          "  * stop - Stop this module",
-          "  * toggle - Toggle this module"
-        ],
-        "notes": [],
-        "signature": "FoAttendance:bindHotkeys(mapping)",
-        "type": "Method",
-        "returns": [],
-        "def": "FoAttendance:bindHotkeys(mapping)",
-        "desc": "Binds hotkeys"
-      },
-      {
-        "name": "init",
-        "stripped_doc": [
-          "initializer",
-          ""
-        ],
-        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "parameters": [
-          " * None",
-          ""
-        ],
-        "notes": [],
-        "signature": "FoAttendance:init()",
-        "type": "Method",
-        "returns": [
-          " * None"
-        ],
-        "def": "FoAttendance:init()",
-        "desc": "initializer"
-      },
-      {
-        "name": "start",
-        "stripped_doc": [
-          "initializer",
-          ""
-        ],
-        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "parameters": [
-          " * None",
-          ""
-        ],
-        "notes": [],
-        "signature": "FoAttendance:start()",
-        "type": "Method",
-        "returns": [
-          " * None"
-        ],
-        "def": "FoAttendance:start()",
-        "desc": "initializer"
-      },
-      {
-        "name": "stop",
-        "stripped_doc": [
-          "initializer",
-          ""
-        ],
-        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "parameters": [
-          " * None",
-          ""
-        ],
-        "notes": [],
-        "signature": "FoAttendance:stop()",
-        "type": "Method",
-        "returns": [
-          " * None"
-        ],
-        "def": "FoAttendance:stop()",
-        "desc": "initializer"
-      },
-      {
-        "name": "toggle",
-        "stripped_doc": [
-          "Toggle FoAttendance",
-          ""
-        ],
-        "doc": "Toggle FoAttendance\n\nParameters:\n * None\n\nReturns:\n * FoAttendance",
-        "parameters": [
-          " * None",
-          ""
-        ],
-        "notes": [],
-        "signature": "FoAttendance:toggle()",
-        "type": "Method",
-        "returns": [
-          " * FoAttendance"
-        ],
-        "def": "FoAttendance:toggle()",
-        "desc": "Toggle FoAttendance"
-      }
-    ],
-    "Method": [
-      {
-        "name": "init",
-        "stripped_doc": [
-          "initializer",
-          ""
-        ],
-        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "parameters": [
-          " * None",
-          ""
-        ],
-        "notes": [],
-        "signature": "FoAttendance:init()",
-        "type": "Method",
-        "returns": [
-          " * None"
-        ],
-        "def": "FoAttendance:init()",
-        "desc": "initializer"
-      },
-      {
-        "name": "start",
-        "stripped_doc": [
-          "initializer",
-          ""
-        ],
-        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "parameters": [
-          " * None",
-          ""
-        ],
-        "notes": [],
-        "signature": "FoAttendance:start()",
-        "type": "Method",
-        "returns": [
-          " * None"
-        ],
-        "def": "FoAttendance:start()",
-        "desc": "initializer"
-      },
-      {
-        "name": "stop",
-        "stripped_doc": [
-          "initializer",
-          ""
-        ],
-        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "parameters": [
-          " * None",
-          ""
-        ],
-        "notes": [],
-        "signature": "FoAttendance:stop()",
-        "type": "Method",
-        "returns": [
-          " * None"
-        ],
-        "def": "FoAttendance:stop()",
-        "desc": "initializer"
-      },
-      {
-        "name": "toggle",
-        "stripped_doc": [
-          "Toggle FoAttendance",
-          ""
-        ],
-        "doc": "Toggle FoAttendance\n\nParameters:\n * None\n\nReturns:\n * FoAttendance",
-        "parameters": [
-          " * None",
-          ""
-        ],
-        "notes": [],
-        "signature": "FoAttendance:toggle()",
-        "type": "Method",
-        "returns": [
-          " * FoAttendance"
-        ],
-        "def": "FoAttendance:toggle()",
-        "desc": "Toggle FoAttendance"
-      },
-      {
-        "name": "bindHotkeys",
-        "stripped_doc": [
-          "Binds hotkeys",
-          ""
-        ],
-        "doc": "Binds hotkeys\n\nParameters:\n * mapping - A table containing hotkey objifier\/key details for the following items:\n  * start - Start this module\n  * stop - Stop this module\n  * toggle - Toggle this module",
-        "parameters": [
-          " * mapping - A table containing hotkey objifier\/key details for the following items:",
-          "  * start - Start this module",
-          "  * stop - Stop this module",
-          "  * toggle - Toggle this module"
-        ],
-        "notes": [],
-        "signature": "FoAttendance:bindHotkeys(mapping)",
-        "type": "Method",
-        "returns": [],
-        "def": "FoAttendance:bindHotkeys(mapping)",
-        "desc": "Binds hotkeys"
-      }
-    ],
-    "Command": [],
-    "doc": "Very personal spoon to register my attendance.\n\nDownload: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/FoAttendance.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/FoAttendance.spoon.zip)",
-    "Field": [],
-    "name": "FoAttendance"
-  }]
+  [
+    {
+      "Command": [],
+      "Constant": [],
+      "Constructor": [],
+      "Deprecated": [],
+      "Field": [],
+      "Function": [],
+      "Method": [
+        {
+          "def": "FoAttendance:init()",
+          "desc": "initializer",
+          "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "init",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "FoAttendance:init()",
+          "stripped_doc": [
+            "initializer",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "FoAttendance:start()",
+          "desc": "initializer",
+          "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "start",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "FoAttendance:start()",
+          "stripped_doc": [
+            "initializer",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "FoAttendance:stop()",
+          "desc": "initializer",
+          "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "stop",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "FoAttendance:stop()",
+          "stripped_doc": [
+            "initializer",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "FoAttendance:toggle()",
+          "desc": "Toggle FoAttendance",
+          "doc": "Toggle FoAttendance\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon FoAttendance",
+          "name": "toggle",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon FoAttendance"
+          ],
+          "signature": "FoAttendance:toggle()",
+          "stripped_doc": [
+            "Toggle FoAttendance",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "FoAttendance:bindHotkeys(mapping)",
+          "desc": "Binds hotkeys",
+          "doc": "Binds hotkeys\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon start - Start this module\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon stop - Stop this module\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle - Toggle this module",
+          "name": "bindHotkeys",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:",
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon start - Start this module",
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon stop - Stop this module",
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle - Toggle this module"
+          ],
+          "returns": [],
+          "signature": "FoAttendance:bindHotkeys(mapping)",
+          "stripped_doc": [
+            "Binds hotkeys",
+            ""
+          ],
+          "type": "Method"
+        }
+      ],
+      "Variable": [
+        {
+          "def": "FoAttendance.events",
+          "desc": "Table of events and actions.",
+          "doc": "Table of events and actions.\nEvents are all provided by caffeinate watcher.\n ref: https://www.hammerspoon.org/docs/hs.caffeinate.watcher.html\nActios are \"attend\" or \"leave\".",
+          "name": "events",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "FoAttendance.events",
+          "stripped_doc": [
+            "Table of events and actions.",
+            "Events are all provided by caffeinate watcher.",
+            " ref: https://www.hammerspoon.org/docs/hs.caffeinate.watcher.html",
+            "Actios are \"attend\" or \"leave\"."
+          ],
+          "type": "Variable"
+        }
+      ],
+      "desc": "Very personal spoon to register my attendance.",
+      "doc": "Very personal spoon to register my attendance.\n\nDownload: [https://github.com/doiken/Spoons/raw/master/Spoons/FoAttendance.spoon.zip](https://github.com/doiken/Spoons/raw/master/Spoons/FoAttendance.spoon.zip)",
+      "items": [
+        {
+          "def": "FoAttendance.events",
+          "desc": "Table of events and actions.",
+          "doc": "Table of events and actions.\nEvents are all provided by caffeinate watcher.\n ref: https://www.hammerspoon.org/docs/hs.caffeinate.watcher.html\nActios are \"attend\" or \"leave\".",
+          "name": "events",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "FoAttendance.events",
+          "stripped_doc": [
+            "Table of events and actions.",
+            "Events are all provided by caffeinate watcher.",
+            " ref: https://www.hammerspoon.org/docs/hs.caffeinate.watcher.html",
+            "Actios are \"attend\" or \"leave\"."
+          ],
+          "type": "Variable"
+        },
+        {
+          "def": "FoAttendance:bindHotkeys(mapping)",
+          "desc": "Binds hotkeys",
+          "doc": "Binds hotkeys\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon start - Start this module\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon stop - Stop this module\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle - Toggle this module",
+          "name": "bindHotkeys",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:",
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon start - Start this module",
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon stop - Stop this module",
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle - Toggle this module"
+          ],
+          "returns": [],
+          "signature": "FoAttendance:bindHotkeys(mapping)",
+          "stripped_doc": [
+            "Binds hotkeys",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "FoAttendance:init()",
+          "desc": "initializer",
+          "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "init",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "FoAttendance:init()",
+          "stripped_doc": [
+            "initializer",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "FoAttendance:start()",
+          "desc": "initializer",
+          "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "start",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "FoAttendance:start()",
+          "stripped_doc": [
+            "initializer",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "FoAttendance:stop()",
+          "desc": "initializer",
+          "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "stop",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "FoAttendance:stop()",
+          "stripped_doc": [
+            "initializer",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "FoAttendance:toggle()",
+          "desc": "Toggle FoAttendance",
+          "doc": "Toggle FoAttendance\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon FoAttendance",
+          "name": "toggle",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon FoAttendance"
+          ],
+          "signature": "FoAttendance:toggle()",
+          "stripped_doc": [
+            "Toggle FoAttendance",
+            ""
+          ],
+          "type": "Method"
+        }
+      ],
+      "name": "FoAttendance",
+      "stripped_doc": [],
+      "submodules": [],
+      "type": "Module"
+    }
+  ],
+  [
+    {
+      "Command": [],
+      "Constant": [],
+      "Constructor": [],
+      "Deprecated": [],
+      "Field": [],
+      "Function": [],
+      "Method": [
+        {
+          "def": "LastKeyRepeat:start()",
+          "desc": "Start waching eventtap and application",
+          "doc": "Start waching eventtap and application\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat",
+          "name": "start",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat"
+          ],
+          "signature": "LastKeyRepeat:start()",
+          "stripped_doc": [
+            "Start waching eventtap and application",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "LastKeyRepeat:stop()",
+          "desc": "stop waching eventtap and application",
+          "doc": "stop waching eventtap and application\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat",
+          "name": "stop",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat"
+          ],
+          "signature": "LastKeyRepeat:stop()",
+          "stripped_doc": [
+            "stop waching eventtap and application",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "LastKeyRepeat:init()",
+          "desc": "initializer",
+          "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat",
+          "name": "init",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat"
+          ],
+          "signature": "LastKeyRepeat:init()",
+          "stripped_doc": [
+            "initializer",
+            ""
+          ],
+          "type": "Method"
+        }
+      ],
+      "Variable": [
+        {
+          "def": "LastKeyRepeat.mapping",
+          "desc": "e.g.",
+          "doc": "e.g.\nspoon.LastKeyRepeat.mapping = {\n { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },\n { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },\n}",
+          "name": "mapping",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "LastKeyRepeat.mapping",
+          "stripped_doc": [
+            "e.g.",
+            "spoon.LastKeyRepeat.mapping = {",
+            " { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },",
+            " { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },",
+            "}"
+          ],
+          "type": "Variable"
+        },
+        {
+          "def": "LastKeyRepeat.mapping",
+          "desc": "when to timeout 2nd stroke",
+          "doc": "when to timeout 2nd stroke",
+          "name": "mapping",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "LastKeyRepeat.mapping",
+          "stripped_doc": [
+            "when to timeout 2nd stroke"
+          ],
+          "type": "Variable"
+        },
+        {
+          "def": "LastKeyRepeat.appsDisable",
+          "desc": "Table of apps which you want to temporary disable LastKeyRepeat functions.",
+          "doc": "Table of apps which you want to temporary disable LastKeyRepeat functions.\ne.g. \nspoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }",
+          "name": "appsDisable",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "LastKeyRepeat.appsDisable",
+          "stripped_doc": [
+            "Table of apps which you want to temporary disable LastKeyRepeat functions.",
+            "e.g. ",
+            "spoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }"
+          ],
+          "type": "Variable"
+        },
+        {
+          "def": "LastKeyRepeat._appsDisable",
+          "desc": "Internal Table for looking up disabled apps.",
+          "doc": "Internal Table for looking up disabled apps.",
+          "name": "_appsDisable",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "LastKeyRepeat._appsDisable",
+          "stripped_doc": [
+            "Internal Table for looking up disabled apps."
+          ],
+          "type": "Variable"
+        }
+      ],
+      "desc": "tmux bind-key -r option-like function",
+      "doc": "tmux bind-key -r option-like function\n\nDownload: [https://github.com/doiken/Spoons/raw/master/Spoons/LastKeyRepeat.spoon.zip](https://github.com/doiken/Spoons/raw/master/Spoons/LastKeyRepeat.spoon.zip)\nthanks to this issue\nhttps://github.com/Hammerspoon/hammerspoon/issues/1128",
+      "items": [
+        {
+          "def": "LastKeyRepeat._appsDisable",
+          "desc": "Internal Table for looking up disabled apps.",
+          "doc": "Internal Table for looking up disabled apps.",
+          "name": "_appsDisable",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "LastKeyRepeat._appsDisable",
+          "stripped_doc": [
+            "Internal Table for looking up disabled apps."
+          ],
+          "type": "Variable"
+        },
+        {
+          "def": "LastKeyRepeat.appsDisable",
+          "desc": "Table of apps which you want to temporary disable LastKeyRepeat functions.",
+          "doc": "Table of apps which you want to temporary disable LastKeyRepeat functions.\ne.g. \nspoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }",
+          "name": "appsDisable",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "LastKeyRepeat.appsDisable",
+          "stripped_doc": [
+            "Table of apps which you want to temporary disable LastKeyRepeat functions.",
+            "e.g. ",
+            "spoon.LastKeyRepeat.appsDisable = { \"iTerm2\" }"
+          ],
+          "type": "Variable"
+        },
+        {
+          "def": "LastKeyRepeat.mapping",
+          "desc": "e.g.",
+          "doc": "e.g.\nspoon.LastKeyRepeat.mapping = {\n { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },\n { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },\n}",
+          "name": "mapping",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "LastKeyRepeat.mapping",
+          "stripped_doc": [
+            "e.g.",
+            "spoon.LastKeyRepeat.mapping = {",
+            " { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'h' } },",
+            " { first = { key = 'g', mods = {'ctrl'} }, second = { key = 'l' } },",
+            "}"
+          ],
+          "type": "Variable"
+        },
+        {
+          "def": "LastKeyRepeat.mapping",
+          "desc": "when to timeout 2nd stroke",
+          "doc": "when to timeout 2nd stroke",
+          "name": "mapping",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "LastKeyRepeat.mapping",
+          "stripped_doc": [
+            "when to timeout 2nd stroke"
+          ],
+          "type": "Variable"
+        },
+        {
+          "def": "LastKeyRepeat:init()",
+          "desc": "initializer",
+          "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat",
+          "name": "init",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat"
+          ],
+          "signature": "LastKeyRepeat:init()",
+          "stripped_doc": [
+            "initializer",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "LastKeyRepeat:start()",
+          "desc": "Start waching eventtap and application",
+          "doc": "Start waching eventtap and application\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat",
+          "name": "start",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat"
+          ],
+          "signature": "LastKeyRepeat:start()",
+          "stripped_doc": [
+            "Start waching eventtap and application",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "LastKeyRepeat:stop()",
+          "desc": "stop waching eventtap and application",
+          "doc": "stop waching eventtap and application\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat",
+          "name": "stop",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat"
+          ],
+          "signature": "LastKeyRepeat:stop()",
+          "stripped_doc": [
+            "stop waching eventtap and application",
+            ""
+          ],
+          "type": "Method"
+        }
+      ],
+      "name": "LastKeyRepeat",
+      "stripped_doc": [],
+      "submodules": [],
+      "type": "Module"
+    }
+  ],
+  [
+    {
+      "Command": [],
+      "Constant": [],
+      "Constructor": [],
+      "Deprecated": [],
+      "Field": [],
+      "Function": [],
+      "Method": [
+        {
+          "def": "PseudoNumKey:start()",
+          "desc": "Start Event Listener",
+          "doc": "Start Event Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "start",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "PseudoNumKey:start()",
+          "stripped_doc": [
+            "Start Event Listener",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "PseudoNumKey:stop()",
+          "desc": "Stop Event Listener",
+          "doc": "Stop Event Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "stop",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "PseudoNumKey:stop()",
+          "stripped_doc": [
+            "Stop Event Listener",
+            ""
+          ],
+          "type": "Method"
+        }
+      ],
+      "Variable": [
+        {
+          "def": "PseudoNumKey.hotkeys",
+          "desc": "Default key map",
+          "doc": "Default key map",
+          "name": "hotkeys",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "PseudoNumKey.hotkeys",
+          "stripped_doc": [
+            "Default key map"
+          ],
+          "type": "Variable"
+        }
+      ],
+      "desc": "Pseudo numeric keypad with FN key for Mac",
+      "doc": "Pseudo numeric keypad with FN key for Mac\n\nDownload: [https://github.com/doiken/Spoons/raw/master/Spoons/PseudoNumKey.spoon.zip](https://github.com/doiken/Spoons/raw/master/Spoons/PseudoNumKey.spoon.zip)",
+      "items": [
+        {
+          "def": "PseudoNumKey.hotkeys",
+          "desc": "Default key map",
+          "doc": "Default key map",
+          "name": "hotkeys",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "PseudoNumKey.hotkeys",
+          "stripped_doc": [
+            "Default key map"
+          ],
+          "type": "Variable"
+        },
+        {
+          "def": "PseudoNumKey:start()",
+          "desc": "Start Event Listener",
+          "doc": "Start Event Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "start",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "PseudoNumKey:start()",
+          "stripped_doc": [
+            "Start Event Listener",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "PseudoNumKey:stop()",
+          "desc": "Stop Event Listener",
+          "doc": "Stop Event Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "stop",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "PseudoNumKey:stop()",
+          "stripped_doc": [
+            "Stop Event Listener",
+            ""
+          ],
+          "type": "Method"
+        }
+      ],
+      "name": "PseudoNumKey",
+      "stripped_doc": [],
+      "submodules": [],
+      "type": "Module"
+    }
+  ],
+  [
+    {
+      "Command": [],
+      "Constant": [],
+      "Constructor": [],
+      "Deprecated": [],
+      "Field": [],
+      "Function": [],
+      "Method": [
+        {
+          "def": "Snippet:init()",
+          "desc": "initializer",
+          "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon Snippet",
+          "name": "init",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon Snippet"
+          ],
+          "signature": "Snippet:init()",
+          "stripped_doc": [
+            "initializer",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "Snippet:showSnippet()",
+          "desc": "Display the snippet in a chooser",
+          "doc": "Display the snippet in a chooser\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "showSnippet",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "Snippet:showSnippet()",
+          "stripped_doc": [
+            "Display the snippet in a chooser",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "Snippet:toggleSnippet()",
+          "desc": "Show/hide the snippet list, depending on its current state",
+          "doc": "Show/hide the snippet list, depending on its current state\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "toggleSnippet",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "Snippet:toggleSnippet()",
+          "stripped_doc": [
+            "Show/hide the snippet list, depending on its current state",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "Snippet:bindHotkeys(mapping)",
+          "desc": "Binds hotkeys for Snippet",
+          "doc": "Binds hotkeys for Snippet\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon show_snippet - Display the snippet chooser\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle_snippet - Show/hide the snippet chooser",
+          "name": "bindHotkeys",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:",
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon show_snippet - Display the snippet chooser",
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle_snippet - Show/hide the snippet chooser"
+          ],
+          "returns": [],
+          "signature": "Snippet:bindHotkeys(mapping)",
+          "stripped_doc": [
+            "Binds hotkeys for Snippet",
+            ""
+          ],
+          "type": "Method"
+        }
+      ],
+      "Variable": [
+        {
+          "def": "Snippet.snippets",
+          "desc": "See description on top to see format and example.",
+          "doc": "See description on top to see format and example.",
+          "name": "snippets",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "Snippet.snippets",
+          "stripped_doc": [
+            "See description on top to see format and example."
+          ],
+          "type": "Variable"
+        }
+      ],
+      "desc": "Manage various kinds of snippets.",
+      "doc": "Manage various kinds of snippets.\n\n![demo](snippet.gif)\n\nYou can register snippets on Snippet.snippets.\nThe format is bellow:\n```\n{\n text = \"TEXT\",\n action = \"ACTION_NAME\",\n contents = \"CONTENTS\",\n}\n```\n- text: index to choose snippet.\n- action: \"text\" or \"shell\" or \"hs\" or \"nest\".\n- contents: depends on ACTION_NAME.\n - text: directly used.\n - shell: evaluated as shell script.\n - hs: called as hammerspoon function.\n - nest: table of nested snippets.\n\ne.g.\n```\nspoon.Snippet.snippets = {\n {\n text = \"text: simple text\",\n action = \"text\",\n contents = \"simple text\\n\",\n },\n {\n text = \"shell: echo Hello\",\n action = \"shell\",\n contents = \"echo Hello\",\n },\n {\n text = \"hs: hs.hash.MD5('string')\",\n action = \"hs\",\n contents = function () return hs.hash.MD5(\"notify\", \"\", \"\") end,\n },\n {\n text = \"nest\",\n action = \"nest\",\n contents = {\n {\n text = \"text: nested text\",\n action = \"text\",\n contents = \"nested text\",\n },\n },\n },\n}\n```\n\nDownload: [https://github.com/doiken/Spoons/raw/master/Spoons/Snippet.spoon.zip](https://github.com/doiken/Spoons/raw/master/Spoons/Snippet.spoon.zip)",
+      "items": [
+        {
+          "def": "Snippet.snippets",
+          "desc": "See description on top to see format and example.",
+          "doc": "See description on top to see format and example.",
+          "name": "snippets",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "Snippet.snippets",
+          "stripped_doc": [
+            "See description on top to see format and example."
+          ],
+          "type": "Variable"
+        },
+        {
+          "def": "Snippet:bindHotkeys(mapping)",
+          "desc": "Binds hotkeys for Snippet",
+          "doc": "Binds hotkeys for Snippet\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon show_snippet - Display the snippet chooser\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle_snippet - Show/hide the snippet chooser",
+          "name": "bindHotkeys",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:",
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon show_snippet - Display the snippet chooser",
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle_snippet - Show/hide the snippet chooser"
+          ],
+          "returns": [],
+          "signature": "Snippet:bindHotkeys(mapping)",
+          "stripped_doc": [
+            "Binds hotkeys for Snippet",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "Snippet:init()",
+          "desc": "initializer",
+          "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon Snippet",
+          "name": "init",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon Snippet"
+          ],
+          "signature": "Snippet:init()",
+          "stripped_doc": [
+            "initializer",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "Snippet:showSnippet()",
+          "desc": "Display the snippet in a chooser",
+          "doc": "Display the snippet in a chooser\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "showSnippet",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "Snippet:showSnippet()",
+          "stripped_doc": [
+            "Display the snippet in a chooser",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "Snippet:toggleSnippet()",
+          "desc": "Show/hide the snippet list, depending on its current state",
+          "doc": "Show/hide the snippet list, depending on its current state\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          "name": "toggleSnippet",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          ],
+          "signature": "Snippet:toggleSnippet()",
+          "stripped_doc": [
+            "Show/hide the snippet list, depending on its current state",
+            ""
+          ],
+          "type": "Method"
+        }
+      ],
+      "name": "Snippet",
+      "stripped_doc": [],
+      "submodules": [],
+      "type": "Module"
+    }
+  ],
+  [
+    {
+      "Command": [],
+      "Constant": [],
+      "Constructor": [],
+      "Deprecated": [],
+      "Field": [],
+      "Function": [],
+      "Method": [
+        {
+          "def": "SwitchableHotkey:bindSpec()",
+          "desc": "Binds hotkey",
+          "doc": "Binds hotkey\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon keyspec\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+          "name": "bindSpec",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon keyspec",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          ],
+          "signature": "SwitchableHotkey:bindSpec()",
+          "stripped_doc": [
+            "Binds hotkey",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "SwitchableHotkey:start()",
+          "desc": "Start Listener",
+          "doc": "Start Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+          "name": "start",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          ],
+          "signature": "SwitchableHotkey:start()",
+          "stripped_doc": [
+            "Start Listener",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "SwitchableHotkey:stop()",
+          "desc": "Stop Listener",
+          "doc": "Stop Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+          "name": "stop",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          ],
+          "signature": "SwitchableHotkey:stop()",
+          "stripped_doc": [
+            "Stop Listener",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "SwitchableHotkey:init()",
+          "desc": "initializer",
+          "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+          "name": "init",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          ],
+          "signature": "SwitchableHotkey:init()",
+          "stripped_doc": [
+            "initializer",
+            ""
+          ],
+          "type": "Method"
+        }
+      ],
+      "Variable": [
+        {
+          "def": "SwitchableHotkey.acceptOnly",
+          "desc": "Table of app name and enabled hot keys.",
+          "doc": "Table of app name and enabled hot keys.\nDefault is all enabled.\nShould be set before SwitchableHotkey:init() called.\ne.g. \nspoon.SwitchableHotkey.acceptOnly = {\n [\"Emacs\"] = {}, -- accept NONE\n [\"iTerm2\"] = { -- accept partially\n {{'ctrl'}, ']'},\n }\n -- Hotkeys of apps not listed above are fully enabled\n}",
+          "name": "acceptOnly",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "SwitchableHotkey.acceptOnly",
+          "stripped_doc": [
+            "Table of app name and enabled hot keys.",
+            "Default is all enabled.",
+            "Should be set before SwitchableHotkey:init() called.",
+            "e.g. ",
+            "spoon.SwitchableHotkey.acceptOnly = {",
+            " [\"Emacs\"] = {}, -- accept NONE",
+            " [\"iTerm2\"] = { -- accept partially",
+            " {{'ctrl'}, ']'},",
+            " }",
+            " -- Hotkeys of apps not listed above are fully enabled",
+            "}"
+          ],
+          "type": "Variable"
+        },
+        {
+          "def": "SwitchableHotkey._acceptOnly",
+          "desc": "Internal Table for looking up accepted hotkeys.",
+          "doc": "Internal Table for looking up accepted hotkeys.",
+          "name": "_acceptOnly",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "SwitchableHotkey._acceptOnly",
+          "stripped_doc": [
+            "Internal Table for looking up accepted hotkeys."
+          ],
+          "type": "Variable"
+        }
+      ],
+      "desc": "HotKeys to which you can switch by each application.",
+      "doc": "HotKeys to which you can switch by each application.\n\nDownload: [https://github.com/doiken/Spoons/raw/master/Spoons/SwitchableHotkey.spoon.zip](https://github.com/doiken/Spoons/raw/master/Spoons/SwitchableHotkey.spoon.zip)",
+      "items": [
+        {
+          "def": "SwitchableHotkey._acceptOnly",
+          "desc": "Internal Table for looking up accepted hotkeys.",
+          "doc": "Internal Table for looking up accepted hotkeys.",
+          "name": "_acceptOnly",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "SwitchableHotkey._acceptOnly",
+          "stripped_doc": [
+            "Internal Table for looking up accepted hotkeys."
+          ],
+          "type": "Variable"
+        },
+        {
+          "def": "SwitchableHotkey.acceptOnly",
+          "desc": "Table of app name and enabled hot keys.",
+          "doc": "Table of app name and enabled hot keys.\nDefault is all enabled.\nShould be set before SwitchableHotkey:init() called.\ne.g. \nspoon.SwitchableHotkey.acceptOnly = {\n [\"Emacs\"] = {}, -- accept NONE\n [\"iTerm2\"] = { -- accept partially\n {{'ctrl'}, ']'},\n }\n -- Hotkeys of apps not listed above are fully enabled\n}",
+          "name": "acceptOnly",
+          "notes": [],
+          "parameters": [],
+          "returns": [],
+          "signature": "SwitchableHotkey.acceptOnly",
+          "stripped_doc": [
+            "Table of app name and enabled hot keys.",
+            "Default is all enabled.",
+            "Should be set before SwitchableHotkey:init() called.",
+            "e.g. ",
+            "spoon.SwitchableHotkey.acceptOnly = {",
+            " [\"Emacs\"] = {}, -- accept NONE",
+            " [\"iTerm2\"] = { -- accept partially",
+            " {{'ctrl'}, ']'},",
+            " }",
+            " -- Hotkeys of apps not listed above are fully enabled",
+            "}"
+          ],
+          "type": "Variable"
+        },
+        {
+          "def": "SwitchableHotkey:bindSpec()",
+          "desc": "Binds hotkey",
+          "doc": "Binds hotkey\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon keyspec\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+          "name": "bindSpec",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon keyspec",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          ],
+          "signature": "SwitchableHotkey:bindSpec()",
+          "stripped_doc": [
+            "Binds hotkey",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "SwitchableHotkey:init()",
+          "desc": "initializer",
+          "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+          "name": "init",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          ],
+          "signature": "SwitchableHotkey:init()",
+          "stripped_doc": [
+            "initializer",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "SwitchableHotkey:start()",
+          "desc": "Start Listener",
+          "doc": "Start Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+          "name": "start",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          ],
+          "signature": "SwitchableHotkey:start()",
+          "stripped_doc": [
+            "Start Listener",
+            ""
+          ],
+          "type": "Method"
+        },
+        {
+          "def": "SwitchableHotkey:stop()",
+          "desc": "Stop Listener",
+          "doc": "Stop Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+          "name": "stop",
+          "notes": [],
+          "parameters": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+            ""
+          ],
+          "returns": [
+            " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          ],
+          "signature": "SwitchableHotkey:stop()",
+          "stripped_doc": [
+            "Stop Listener",
+            ""
+          ],
+          "type": "Method"
+        }
+      ],
+      "name": "SwitchableHotkey",
+      "stripped_doc": [],
+      "submodules": [],
+      "type": "Module"
+    }
+  ]
+]

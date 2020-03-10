@@ -1,308 +1,256 @@
 [
   {
-    "Constant" : [
-
-    ],
-    "submodules" : [
-
-    ],
-    "Function" : [
-
-    ],
-    "Variable" : [
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
       {
-        "name" : "events",
-        "stripped_doc" : [
-          "Table of events and actions.",
-          "Events are all provided by caffeinate watcher.",
-          "    ref: https:\/\/www.hammerspoon.org\/docs\/hs.caffeinate.watcher.html",
-          "Actios are \"attend\" or \"leave\"."
-        ],
-        "doc" : "Table of events and actions.\nEvents are all provided by caffeinate watcher.\n    ref: https:\/\/www.hammerspoon.org\/docs\/hs.caffeinate.watcher.html\nActios are \"attend\" or \"leave\".",
-        "parameters" : [
-
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "FoAttendance.events",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "def" : "FoAttendance.events",
-        "desc" : "Table of events and actions."
-      }
-    ],
-    "stripped_doc" : [
-
-    ],
-    "type" : "Module",
-    "Deprecated" : [
-
-    ],
-    "desc" : "Very personal spoon to register my attendance.",
-    "Constructor" : [
-
-    ],
-    "items" : [
-      {
-        "name" : "events",
-        "stripped_doc" : [
-          "Table of events and actions.",
-          "Events are all provided by caffeinate watcher.",
-          "    ref: https:\/\/www.hammerspoon.org\/docs\/hs.caffeinate.watcher.html",
-          "Actios are \"attend\" or \"leave\"."
-        ],
-        "doc" : "Table of events and actions.\nEvents are all provided by caffeinate watcher.\n    ref: https:\/\/www.hammerspoon.org\/docs\/hs.caffeinate.watcher.html\nActios are \"attend\" or \"leave\".",
-        "parameters" : [
-
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "FoAttendance.events",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "def" : "FoAttendance.events",
-        "desc" : "Table of events and actions."
-      },
-      {
-        "name" : "bindHotkeys",
-        "stripped_doc" : [
-          "Binds hotkeys",
+        "def": "FoAttendance:init()",
+        "desc": "initializer",
+        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "name": "init",
+        "notes": [],
+        "parameters": [
+          " * None",
           ""
         ],
-        "doc" : "Binds hotkeys\n\nParameters:\n * mapping - A table containing hotkey objifier\/key details for the following items:\n  * start - Start this module\n  * stop - Stop this module\n  * toggle - Toggle this module",
-        "parameters" : [
-          " * mapping - A table containing hotkey objifier\/key details for the following items:",
+        "returns": [
+          " * None"
+        ],
+        "signature": "FoAttendance:init()",
+        "stripped_doc": [
+          "initializer",
+          ""
+        ],
+        "type": "Method"
+      },
+      {
+        "def": "FoAttendance:start()",
+        "desc": "initializer",
+        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "name": "start",
+        "notes": [],
+        "parameters": [
+          " * None",
+          ""
+        ],
+        "returns": [
+          " * None"
+        ],
+        "signature": "FoAttendance:start()",
+        "stripped_doc": [
+          "initializer",
+          ""
+        ],
+        "type": "Method"
+      },
+      {
+        "def": "FoAttendance:stop()",
+        "desc": "initializer",
+        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "name": "stop",
+        "notes": [],
+        "parameters": [
+          " * None",
+          ""
+        ],
+        "returns": [
+          " * None"
+        ],
+        "signature": "FoAttendance:stop()",
+        "stripped_doc": [
+          "initializer",
+          ""
+        ],
+        "type": "Method"
+      },
+      {
+        "def": "FoAttendance:toggle()",
+        "desc": "Toggle FoAttendance",
+        "doc": "Toggle FoAttendance\n\nParameters:\n * None\n\nReturns:\n * FoAttendance",
+        "name": "toggle",
+        "notes": [],
+        "parameters": [
+          " * None",
+          ""
+        ],
+        "returns": [
+          " * FoAttendance"
+        ],
+        "signature": "FoAttendance:toggle()",
+        "stripped_doc": [
+          "Toggle FoAttendance",
+          ""
+        ],
+        "type": "Method"
+      },
+      {
+        "def": "FoAttendance:bindHotkeys(mapping)",
+        "desc": "Binds hotkeys",
+        "doc": "Binds hotkeys\n\nParameters:\n * mapping - A table containing hotkey objifier/key details for the following items:\n  * start - Start this module\n  * stop - Stop this module\n  * toggle - Toggle this module",
+        "name": "bindHotkeys",
+        "notes": [],
+        "parameters": [
+          " * mapping - A table containing hotkey objifier/key details for the following items:",
           "  * start - Start this module",
           "  * stop - Stop this module",
           "  * toggle - Toggle this module"
         ],
-        "notes" : [
-
-        ],
-        "signature" : "FoAttendance:bindHotkeys(mapping)",
-        "type" : "Method",
-        "returns" : [
-
-        ],
-        "def" : "FoAttendance:bindHotkeys(mapping)",
-        "desc" : "Binds hotkeys"
-      },
-      {
-        "name" : "init",
-        "stripped_doc" : [
-          "initializer",
-          ""
-        ],
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "parameters" : [
-          " * None",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "FoAttendance:init()",
-        "type" : "Method",
-        "returns" : [
-          " * None"
-        ],
-        "def" : "FoAttendance:init()",
-        "desc" : "initializer"
-      },
-      {
-        "name" : "start",
-        "stripped_doc" : [
-          "initializer",
-          ""
-        ],
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "parameters" : [
-          " * None",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "FoAttendance:start()",
-        "type" : "Method",
-        "returns" : [
-          " * None"
-        ],
-        "def" : "FoAttendance:start()",
-        "desc" : "initializer"
-      },
-      {
-        "name" : "stop",
-        "stripped_doc" : [
-          "initializer",
-          ""
-        ],
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "parameters" : [
-          " * None",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "FoAttendance:stop()",
-        "type" : "Method",
-        "returns" : [
-          " * None"
-        ],
-        "def" : "FoAttendance:stop()",
-        "desc" : "initializer"
-      },
-      {
-        "name" : "toggle",
-        "stripped_doc" : [
-          "Toggle FoAttendance",
-          ""
-        ],
-        "doc" : "Toggle FoAttendance\n\nParameters:\n * None\n\nReturns:\n * FoAttendance",
-        "parameters" : [
-          " * None",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "FoAttendance:toggle()",
-        "type" : "Method",
-        "returns" : [
-          " * FoAttendance"
-        ],
-        "def" : "FoAttendance:toggle()",
-        "desc" : "Toggle FoAttendance"
-      }
-    ],
-    "Method" : [
-      {
-        "name" : "init",
-        "stripped_doc" : [
-          "initializer",
-          ""
-        ],
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "parameters" : [
-          " * None",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "FoAttendance:init()",
-        "type" : "Method",
-        "returns" : [
-          " * None"
-        ],
-        "def" : "FoAttendance:init()",
-        "desc" : "initializer"
-      },
-      {
-        "name" : "start",
-        "stripped_doc" : [
-          "initializer",
-          ""
-        ],
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "parameters" : [
-          " * None",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "FoAttendance:start()",
-        "type" : "Method",
-        "returns" : [
-          " * None"
-        ],
-        "def" : "FoAttendance:start()",
-        "desc" : "initializer"
-      },
-      {
-        "name" : "stop",
-        "stripped_doc" : [
-          "initializer",
-          ""
-        ],
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
-        "parameters" : [
-          " * None",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "FoAttendance:stop()",
-        "type" : "Method",
-        "returns" : [
-          " * None"
-        ],
-        "def" : "FoAttendance:stop()",
-        "desc" : "initializer"
-      },
-      {
-        "name" : "toggle",
-        "stripped_doc" : [
-          "Toggle FoAttendance",
-          ""
-        ],
-        "doc" : "Toggle FoAttendance\n\nParameters:\n * None\n\nReturns:\n * FoAttendance",
-        "parameters" : [
-          " * None",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "FoAttendance:toggle()",
-        "type" : "Method",
-        "returns" : [
-          " * FoAttendance"
-        ],
-        "def" : "FoAttendance:toggle()",
-        "desc" : "Toggle FoAttendance"
-      },
-      {
-        "name" : "bindHotkeys",
-        "stripped_doc" : [
+        "returns": [],
+        "signature": "FoAttendance:bindHotkeys(mapping)",
+        "stripped_doc": [
           "Binds hotkeys",
           ""
         ],
-        "doc" : "Binds hotkeys\n\nParameters:\n * mapping - A table containing hotkey objifier\/key details for the following items:\n  * start - Start this module\n  * stop - Stop this module\n  * toggle - Toggle this module",
-        "parameters" : [
-          " * mapping - A table containing hotkey objifier\/key details for the following items:",
+        "type": "Method"
+      }
+    ],
+    "Variable": [
+      {
+        "def": "FoAttendance.events",
+        "desc": "Table of events and actions.",
+        "doc": "Table of events and actions.\nEvents are all provided by caffeinate watcher.\n    ref: https://www.hammerspoon.org/docs/hs.caffeinate.watcher.html\nActios are \"attend\" or \"leave\".",
+        "name": "events",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "FoAttendance.events",
+        "stripped_doc": [
+          "Table of events and actions.",
+          "Events are all provided by caffeinate watcher.",
+          "    ref: https://www.hammerspoon.org/docs/hs.caffeinate.watcher.html",
+          "Actios are \"attend\" or \"leave\"."
+        ],
+        "type": "Variable"
+      }
+    ],
+    "desc": "Very personal spoon to register my attendance.",
+    "doc": "Very personal spoon to register my attendance.\n\nDownload: [https://github.com/doiken/Spoons/raw/master/Spoons/FoAttendance.spoon.zip](https://github.com/doiken/Spoons/raw/master/Spoons/FoAttendance.spoon.zip)",
+    "items": [
+      {
+        "def": "FoAttendance.events",
+        "desc": "Table of events and actions.",
+        "doc": "Table of events and actions.\nEvents are all provided by caffeinate watcher.\n    ref: https://www.hammerspoon.org/docs/hs.caffeinate.watcher.html\nActios are \"attend\" or \"leave\".",
+        "name": "events",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "FoAttendance.events",
+        "stripped_doc": [
+          "Table of events and actions.",
+          "Events are all provided by caffeinate watcher.",
+          "    ref: https://www.hammerspoon.org/docs/hs.caffeinate.watcher.html",
+          "Actios are \"attend\" or \"leave\"."
+        ],
+        "type": "Variable"
+      },
+      {
+        "def": "FoAttendance:bindHotkeys(mapping)",
+        "desc": "Binds hotkeys",
+        "doc": "Binds hotkeys\n\nParameters:\n * mapping - A table containing hotkey objifier/key details for the following items:\n  * start - Start this module\n  * stop - Stop this module\n  * toggle - Toggle this module",
+        "name": "bindHotkeys",
+        "notes": [],
+        "parameters": [
+          " * mapping - A table containing hotkey objifier/key details for the following items:",
           "  * start - Start this module",
           "  * stop - Stop this module",
           "  * toggle - Toggle this module"
         ],
-        "notes" : [
-
+        "returns": [],
+        "signature": "FoAttendance:bindHotkeys(mapping)",
+        "stripped_doc": [
+          "Binds hotkeys",
+          ""
         ],
-        "signature" : "FoAttendance:bindHotkeys(mapping)",
-        "type" : "Method",
-        "returns" : [
-
+        "type": "Method"
+      },
+      {
+        "def": "FoAttendance:init()",
+        "desc": "initializer",
+        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "name": "init",
+        "notes": [],
+        "parameters": [
+          " * None",
+          ""
         ],
-        "def" : "FoAttendance:bindHotkeys(mapping)",
-        "desc" : "Binds hotkeys"
+        "returns": [
+          " * None"
+        ],
+        "signature": "FoAttendance:init()",
+        "stripped_doc": [
+          "initializer",
+          ""
+        ],
+        "type": "Method"
+      },
+      {
+        "def": "FoAttendance:start()",
+        "desc": "initializer",
+        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "name": "start",
+        "notes": [],
+        "parameters": [
+          " * None",
+          ""
+        ],
+        "returns": [
+          " * None"
+        ],
+        "signature": "FoAttendance:start()",
+        "stripped_doc": [
+          "initializer",
+          ""
+        ],
+        "type": "Method"
+      },
+      {
+        "def": "FoAttendance:stop()",
+        "desc": "initializer",
+        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * None",
+        "name": "stop",
+        "notes": [],
+        "parameters": [
+          " * None",
+          ""
+        ],
+        "returns": [
+          " * None"
+        ],
+        "signature": "FoAttendance:stop()",
+        "stripped_doc": [
+          "initializer",
+          ""
+        ],
+        "type": "Method"
+      },
+      {
+        "def": "FoAttendance:toggle()",
+        "desc": "Toggle FoAttendance",
+        "doc": "Toggle FoAttendance\n\nParameters:\n * None\n\nReturns:\n * FoAttendance",
+        "name": "toggle",
+        "notes": [],
+        "parameters": [
+          " * None",
+          ""
+        ],
+        "returns": [
+          " * FoAttendance"
+        ],
+        "signature": "FoAttendance:toggle()",
+        "stripped_doc": [
+          "Toggle FoAttendance",
+          ""
+        ],
+        "type": "Method"
       }
     ],
-    "Command" : [
-
-    ],
-    "doc" : "Very personal spoon to register my attendance.\n\nDownload: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/FoAttendance.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/FoAttendance.spoon.zip)",
-    "Field" : [
-
-    ],
-    "name" : "FoAttendance"
+    "name": "FoAttendance",
+    "stripped_doc": [],
+    "submodules": [],
+    "type": "Module"
   }
 ]

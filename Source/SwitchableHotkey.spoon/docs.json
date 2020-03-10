@@ -1,20 +1,104 @@
 [
   {
-    "Constant" : [
-
-    ],
-    "submodules" : [
-
-    ],
-    "Function" : [
-
-    ],
-    "Variable" : [
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
       {
-        "doc" : "Table of app name and enabled hot keys.\nDefault is all enabled.\nShould be set before SwitchableHotkey:init() called.\ne.g. \nspoon.SwitchableHotkey.acceptOnly = {\n  [\"Emacs\"] = {}, -- accept NONE\n  [\"iTerm2\"] = {  -- accept partially\n    {{'ctrl'}, ']'},\n  }\n  -- Hotkeys of apps not listed above are fully enabled\n}",
-        "desc" : "Table of app name and enabled hot keys.",
-        "def" : "SwitchableHotkey.acceptOnly",
-        "stripped_doc" : [
+        "def": "SwitchableHotkey:bindSpec()",
+        "desc": "Binds hotkey",
+        "doc": "Binds hotkey\n\nParameters:\n * keyspec\n\nReturns:\n * SwitchableHotkey",
+        "name": "bindSpec",
+        "notes": [],
+        "parameters": [
+          " * keyspec",
+          ""
+        ],
+        "returns": [
+          " * SwitchableHotkey"
+        ],
+        "signature": "SwitchableHotkey:bindSpec()",
+        "stripped_doc": [
+          "Binds hotkey",
+          ""
+        ],
+        "type": "Method"
+      },
+      {
+        "def": "SwitchableHotkey:start()",
+        "desc": "Start Listener",
+        "doc": "Start Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
+        "name": "start",
+        "notes": [],
+        "parameters": [
+          " * None",
+          ""
+        ],
+        "returns": [
+          " * SwitchableHotkey"
+        ],
+        "signature": "SwitchableHotkey:start()",
+        "stripped_doc": [
+          "Start Listener",
+          ""
+        ],
+        "type": "Method"
+      },
+      {
+        "def": "SwitchableHotkey:stop()",
+        "desc": "Stop Listener",
+        "doc": "Stop Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
+        "name": "stop",
+        "notes": [],
+        "parameters": [
+          " * None",
+          ""
+        ],
+        "returns": [
+          " * SwitchableHotkey"
+        ],
+        "signature": "SwitchableHotkey:stop()",
+        "stripped_doc": [
+          "Stop Listener",
+          ""
+        ],
+        "type": "Method"
+      },
+      {
+        "def": "SwitchableHotkey:init()",
+        "desc": "initializer",
+        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
+        "name": "init",
+        "notes": [],
+        "parameters": [
+          " * None",
+          ""
+        ],
+        "returns": [
+          " * SwitchableHotkey"
+        ],
+        "signature": "SwitchableHotkey:init()",
+        "stripped_doc": [
+          "initializer",
+          ""
+        ],
+        "type": "Method"
+      }
+    ],
+    "Variable": [
+      {
+        "def": "SwitchableHotkey.acceptOnly",
+        "desc": "Table of app name and enabled hot keys.",
+        "doc": "Table of app name and enabled hot keys.\nDefault is all enabled.\nShould be set before SwitchableHotkey:init() called.\ne.g. \nspoon.SwitchableHotkey.acceptOnly = {\n  [\"Emacs\"] = {}, -- accept NONE\n  [\"iTerm2\"] = {  -- accept partially\n    {{'ctrl'}, ']'},\n  }\n  -- Hotkeys of apps not listed above are fully enabled\n}",
+        "name": "acceptOnly",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "SwitchableHotkey.acceptOnly",
+        "stripped_doc": [
           "Table of app name and enabled hot keys.",
           "Default is all enabled.",
           "Should be set before SwitchableHotkey:init() called.",
@@ -27,174 +111,50 @@
           "  -- Hotkeys of apps not listed above are fully enabled",
           "}"
         ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey.acceptOnly",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "acceptOnly",
-        "parameters" : [
-
-        ]
+        "type": "Variable"
       },
       {
-        "doc" : "Internal Table for looking up accepted hotkeys.",
-        "desc" : "Internal Table for looking up accepted hotkeys.",
-        "def" : "SwitchableHotkey._acceptOnly",
-        "stripped_doc" : [
+        "def": "SwitchableHotkey._acceptOnly",
+        "desc": "Internal Table for looking up accepted hotkeys.",
+        "doc": "Internal Table for looking up accepted hotkeys.",
+        "name": "_acceptOnly",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "SwitchableHotkey._acceptOnly",
+        "stripped_doc": [
           "Internal Table for looking up accepted hotkeys."
         ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey._acceptOnly",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "_acceptOnly",
-        "parameters" : [
-
-        ]
+        "type": "Variable"
       }
     ],
-    "stripped_doc" : [
-
-    ],
-    "desc" : "",
-    "Deprecated" : [
-
-    ],
-    "type" : "Module",
-    "Constructor" : [
-
-    ],
-    "doc" : "Download: [https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/SwitchableHotkey.spoon.zip](https:\/\/github.com\/doiken\/Spoons\/raw\/master\/Spoons\/SwitchableHotkey.spoon.zip)",
-    "Method" : [
+    "desc": "HotKeys to which you can switch by each application.",
+    "doc": "HotKeys to which you can switch by each application.\n\nDownload: [https://github.com/doiken/Spoons/raw/master/Spoons/SwitchableHotkey.spoon.zip](https://github.com/doiken/Spoons/raw/master/Spoons/SwitchableHotkey.spoon.zip)",
+    "items": [
       {
-        "doc" : "Binds hotkey\n\nParameters:\n * keyspec\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "Binds hotkey",
-        "def" : "SwitchableHotkey:bindSpec()",
-        "stripped_doc" : [
-          "Binds hotkey",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:bindSpec()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "bindSpec",
-        "parameters" : [
-          " * keyspec",
-          ""
-        ]
-      },
-      {
-        "doc" : "Start Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "Start Listener",
-        "def" : "SwitchableHotkey:start()",
-        "stripped_doc" : [
-          "Start Listener",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:start()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "start",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      },
-      {
-        "doc" : "Stop Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "Stop Listener",
-        "def" : "SwitchableHotkey:stop()",
-        "stripped_doc" : [
-          "Stop Listener",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:stop()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "stop",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      },
-      {
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "initializer",
-        "def" : "SwitchableHotkey:init()",
-        "stripped_doc" : [
-          "initializer",
-          ""
-        ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:init()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "init",
-        "parameters" : [
-          " * None",
-          ""
-        ]
-      }
-    ],
-    "Command" : [
-
-    ],
-    "Field" : [
-
-    ],
-    "items" : [
-      {
-        "doc" : "Internal Table for looking up accepted hotkeys.",
-        "desc" : "Internal Table for looking up accepted hotkeys.",
-        "def" : "SwitchableHotkey._acceptOnly",
-        "stripped_doc" : [
+        "def": "SwitchableHotkey._acceptOnly",
+        "desc": "Internal Table for looking up accepted hotkeys.",
+        "doc": "Internal Table for looking up accepted hotkeys.",
+        "name": "_acceptOnly",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "SwitchableHotkey._acceptOnly",
+        "stripped_doc": [
           "Internal Table for looking up accepted hotkeys."
         ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey._acceptOnly",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "_acceptOnly",
-        "parameters" : [
-
-        ]
+        "type": "Variable"
       },
       {
-        "doc" : "Table of app name and enabled hot keys.\nDefault is all enabled.\nShould be set before SwitchableHotkey:init() called.\ne.g. \nspoon.SwitchableHotkey.acceptOnly = {\n  [\"Emacs\"] = {}, -- accept NONE\n  [\"iTerm2\"] = {  -- accept partially\n    {{'ctrl'}, ']'},\n  }\n  -- Hotkeys of apps not listed above are fully enabled\n}",
-        "desc" : "Table of app name and enabled hot keys.",
-        "def" : "SwitchableHotkey.acceptOnly",
-        "stripped_doc" : [
+        "def": "SwitchableHotkey.acceptOnly",
+        "desc": "Table of app name and enabled hot keys.",
+        "doc": "Table of app name and enabled hot keys.\nDefault is all enabled.\nShould be set before SwitchableHotkey:init() called.\ne.g. \nspoon.SwitchableHotkey.acceptOnly = {\n  [\"Emacs\"] = {}, -- accept NONE\n  [\"iTerm2\"] = {  -- accept partially\n    {{'ctrl'}, ']'},\n  }\n  -- Hotkeys of apps not listed above are fully enabled\n}",
+        "name": "acceptOnly",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "SwitchableHotkey.acceptOnly",
+        "stripped_doc": [
           "Table of app name and enabled hot keys.",
           "Default is all enabled.",
           "Should be set before SwitchableHotkey:init() called.",
@@ -207,108 +167,92 @@
           "  -- Hotkeys of apps not listed above are fully enabled",
           "}"
         ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey.acceptOnly",
-        "type" : "Variable",
-        "returns" : [
-
-        ],
-        "name" : "acceptOnly",
-        "parameters" : [
-
-        ]
+        "type": "Variable"
       },
       {
-        "doc" : "Binds hotkey\n\nParameters:\n * keyspec\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "Binds hotkey",
-        "def" : "SwitchableHotkey:bindSpec()",
-        "stripped_doc" : [
+        "def": "SwitchableHotkey:bindSpec()",
+        "desc": "Binds hotkey",
+        "doc": "Binds hotkey\n\nParameters:\n * keyspec\n\nReturns:\n * SwitchableHotkey",
+        "name": "bindSpec",
+        "notes": [],
+        "parameters": [
+          " * keyspec",
+          ""
+        ],
+        "returns": [
+          " * SwitchableHotkey"
+        ],
+        "signature": "SwitchableHotkey:bindSpec()",
+        "stripped_doc": [
           "Binds hotkey",
           ""
         ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:bindSpec()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "bindSpec",
-        "parameters" : [
-          " * keyspec",
-          ""
-        ]
+        "type": "Method"
       },
       {
-        "doc" : "initializer\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "initializer",
-        "def" : "SwitchableHotkey:init()",
-        "stripped_doc" : [
+        "def": "SwitchableHotkey:init()",
+        "desc": "initializer",
+        "doc": "initializer\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
+        "name": "init",
+        "notes": [],
+        "parameters": [
+          " * None",
+          ""
+        ],
+        "returns": [
+          " * SwitchableHotkey"
+        ],
+        "signature": "SwitchableHotkey:init()",
+        "stripped_doc": [
           "initializer",
           ""
         ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:init()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "init",
-        "parameters" : [
-          " * None",
-          ""
-        ]
+        "type": "Method"
       },
       {
-        "doc" : "Start Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "Start Listener",
-        "def" : "SwitchableHotkey:start()",
-        "stripped_doc" : [
+        "def": "SwitchableHotkey:start()",
+        "desc": "Start Listener",
+        "doc": "Start Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
+        "name": "start",
+        "notes": [],
+        "parameters": [
+          " * None",
+          ""
+        ],
+        "returns": [
+          " * SwitchableHotkey"
+        ],
+        "signature": "SwitchableHotkey:start()",
+        "stripped_doc": [
           "Start Listener",
           ""
         ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:start()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "start",
-        "parameters" : [
-          " * None",
-          ""
-        ]
+        "type": "Method"
       },
       {
-        "doc" : "Stop Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
-        "desc" : "Stop Listener",
-        "def" : "SwitchableHotkey:stop()",
-        "stripped_doc" : [
+        "def": "SwitchableHotkey:stop()",
+        "desc": "Stop Listener",
+        "doc": "Stop Listener\n\nParameters:\n * None\n\nReturns:\n * SwitchableHotkey",
+        "name": "stop",
+        "notes": [],
+        "parameters": [
+          " * None",
+          ""
+        ],
+        "returns": [
+          " * SwitchableHotkey"
+        ],
+        "signature": "SwitchableHotkey:stop()",
+        "stripped_doc": [
           "Stop Listener",
           ""
         ],
-        "notes" : [
-
-        ],
-        "signature" : "SwitchableHotkey:stop()",
-        "type" : "Method",
-        "returns" : [
-          " * SwitchableHotkey"
-        ],
-        "name" : "stop",
-        "parameters" : [
-          " * None",
-          ""
-        ]
+        "type": "Method"
       }
     ],
-    "name" : "SwitchableHotkey"
+    "name": "SwitchableHotkey",
+    "stripped_doc": [],
+    "submodules": [],
+    "type": "Module"
   }
 ]

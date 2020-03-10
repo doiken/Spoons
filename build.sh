@@ -16,10 +16,14 @@ cd $source_dir
 json=""
 for source in $(ls -d */ | perl -pe 's|/$||g' | xargs echo); do
     d=${source_dir}/${source}
-    json="${json} $(hs -c "hs.doc.builder.genJSON('${d}')" | grep -v "^--" | /usr/local/bin/jq --sort-keys | tee ${d}/docs.json)"
+    out=$(hs -c "hs.doc.builder.genJSON('${d}')" | grep -v "^--" | /usr/local/bin/jq --sort-keys)
+    if [ $(echo "$out" | md5) != "$(md5 -q ${d}/docs.json)" ]; then
+        echo $out > ${d}/docs.json
+    fi
+    json="${json} ${out}"
 
     (
-        zip -r ../Spoons/${source}.zip ./${source}
+        zip -Xr ../Spoons/${source}.zip ./${source}
     )
 done
 echo $json | /usr/local/bin/jq --sort-keys --slurp . > "${root_dir}/docs/docs.json"
