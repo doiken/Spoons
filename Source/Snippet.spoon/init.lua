@@ -1,6 +1,57 @@
 --- === Snippet ===
 ---
---- Manage snippets.
+--- Manage various kinds of snippets.
+---
+--- ![demo](snippet.gif)
+---
+--- You can register snippets on Snippet.snippets.
+--- The format is bellow:
+--- ```
+--- {
+---     text = "TEXT",
+---     action = "ACTION_NAME",
+---     contents = "CONTENTS",
+--- }
+--- ```
+--- - text: index to choose snippet.
+--- - action: "text" or "shell" or "hs" or "nest".
+--- - contents: depends on ACTION_NAME.
+---   - text: directly used.
+---   - shell: evaluated as shell script.
+---   - hs: called as hammerspoon function.
+---   - nest: table of nested snippets.
+---
+--- e.g.
+--- ```
+--- spoon.Snippet.snippets = {
+---   {
+---     text = "text: simple text",
+---     action = "text",
+---     contents = "simple text\n",
+---   },
+---   {
+---     text = "shell: echo Hello",
+---     action = "shell",
+---     contents = "echo Hello",
+---   },
+---   {
+---     text = "hs: hs.hash.MD5('string')",
+---     action = "hs",
+---     contents = function () return hs.hash.MD5("notify", "", "") end,
+---   },
+---   {
+---     text = "nest",
+---     action = "nest",
+---     contents = {
+---       {
+---         text = "text: nested text",
+---         action = "text",
+---         contents = "nested text",
+---       },
+---     },
+---   },
+--- }
+--- ```
 ---
 --- Download: [https://github.com/doiken/Spoons/raw/master/Spoons/Snippet.spoon.zip](https://github.com/doiken/Spoons/raw/master/Spoons/Snippet.spoon.zip)
 
@@ -24,43 +75,7 @@ obj._prevFocusedWindow = nil
 
 --- Snippet.snippets
 --- Variable
---- The format is bellow.
---- { text = "TEXT", action = "ACTION_NAME", contents = "CONTENTS" }
---- TEXT is index to choose snippet.
---- Action is "text" or "shell" or "hs" or "nest".
---- When action is text, CONTENTS is directly used.
---- When action is shell, CONTENTS is evaluated as shell script.
---- When action is hs, CONTENTS is called as hammerspoon function.
---- When action is nest, CONTENTS is table of nested snippets.
---- e.g. 
---- spoon.Snippet.snippets = {
----   {
----     text = "temlate for greeting",
----     action = "text",
----     contents = "Hello!",
----   },
----   {
----     text = "echo greeting",
----     action = "shell",
----     contents = "echo 'Hello!'",
----   },
----   {
----     text = "notify greeting",
----     action = "hs",
----     contents = function () hs.notify.show("title", "", "") end,
----   },
----   {
----     text = "nest greet",
----     action = "nest",
----     contents = {
----       {
----         text = "nested greeting",
----         action = "text",
----         contents = "nested Hello!",
----       },
----     },
----   },
---- }
+--- See description on top to see format and example.
 obj.snippets = {}
 
 local actions = {
@@ -142,7 +157,7 @@ end
 ---  * None
 ---
 --- Returns:
----  * None
+---  * Snippet
 function obj:init()
   self._chooser = hs.chooser.new(hs.fnutils.partial(processSelectedItem))
   self._chooser:choices(populateChooser())
@@ -151,7 +166,13 @@ end
 
 --- Snippet:showSnippet()
 --- Method
---- Display the snippet list in a chooser
+--- Display the snippet in a chooser
+---
+--- Parameters:
+---  * None
+---
+--- Returns:
+---  * None
 function obj:showSnippet()
    if self._chooser ~= nil then
       self._prevFocusedWindow = hs.window.focusedWindow()
@@ -164,6 +185,12 @@ end
 --- Snippet:toggleSnippet()
 --- Method
 --- Show/hide the snippet list, depending on its current state
+---
+--- Parameters:
+---  * None
+---
+--- Returns:
+---  * None
 function obj:toggleSnippet()
    if self._chooser:isVisible() then
       self._chooser:hide()
