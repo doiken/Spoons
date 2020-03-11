@@ -77,12 +77,12 @@ end
 
 local function handleGlobalAppEvent(name)
   if obj._acceptOnly[name] then
-    obj.disabled = true
+    obj._disabled = true
     enableHotkeys() -- workaround for partial disable settings
     disableHotkeys(obj._acceptOnly[name])
-  elseif obj.disabled then
+  elseif obj._disabled then
     enableHotkeys()
-    obj.disabled = false
+    obj._disabled = false
   end
 end
 
@@ -136,6 +136,8 @@ end)
 --- Returns:
 ---  * SwitchableHotkey
 function obj:start()
+  -- flag _disabled to enable each keys 
+  obj._disabled = true
   handleGlobalAppEvent(hs.window.frontmostWindow():application():name())
   obj.applicationListener:start()
   return obj
