@@ -10,15 +10,15 @@
       {
         "def": "FoAttendance:init()",
         "desc": "initializer",
-        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "init",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "FoAttendance:init()",
         "stripped_doc": [
@@ -30,15 +30,15 @@
       {
         "def": "FoAttendance:start()",
         "desc": "initializer",
-        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "start",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "FoAttendance:start()",
         "stripped_doc": [
@@ -50,15 +50,15 @@
       {
         "def": "FoAttendance:stop()",
         "desc": "initializer",
-        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "stop",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "FoAttendance:stop()",
         "stripped_doc": [
@@ -70,15 +70,15 @@
       {
         "def": "FoAttendance:toggle()",
         "desc": "Toggle FoAttendance",
-        "doc": "Toggle FoAttendance\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon FoAttendance",
+        "doc": "Toggle FoAttendance\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon FoAttendance",
         "name": "toggle",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon FoAttendance"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon FoAttendance"
         ],
         "signature": "FoAttendance:toggle()",
         "stripped_doc": [
@@ -90,14 +90,14 @@
       {
         "def": "FoAttendance:bindHotkeys(mapping)",
         "desc": "Binds hotkeys",
-        "doc": "Binds hotkeys\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon start - Start this module\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon stop - Stop this module\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle - Toggle this module",
+        "doc": "Binds hotkeys\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon mapping - A table containing hotkey objifier/key details for the following items:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon start - Start this module\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon stop - Stop this module\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon toggle - Toggle this module",
         "name": "bindHotkeys",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:",
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon start - Start this module",
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon stop - Stop this module",
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle - Toggle this module"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon mapping - A table containing hotkey objifier/key details for the following items:",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon start - Start this module",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon stop - Stop this module",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon toggle - Toggle this module"
         ],
         "returns": [],
         "signature": "FoAttendance:bindHotkeys(mapping)",
@@ -150,14 +150,14 @@
       {
         "def": "FoAttendance:bindHotkeys(mapping)",
         "desc": "Binds hotkeys",
-        "doc": "Binds hotkeys\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon start - Start this module\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon stop - Stop this module\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle - Toggle this module",
+        "doc": "Binds hotkeys\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon mapping - A table containing hotkey objifier/key details for the following items:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon start - Start this module\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon stop - Stop this module\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon toggle - Toggle this module",
         "name": "bindHotkeys",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:",
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon start - Start this module",
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon stop - Stop this module",
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle - Toggle this module"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon mapping - A table containing hotkey objifier/key details for the following items:",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon start - Start this module",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon stop - Stop this module",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon toggle - Toggle this module"
         ],
         "returns": [],
         "signature": "FoAttendance:bindHotkeys(mapping)",
@@ -170,15 +170,15 @@
       {
         "def": "FoAttendance:init()",
         "desc": "initializer",
-        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "init",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "FoAttendance:init()",
         "stripped_doc": [
@@ -190,15 +190,15 @@
       {
         "def": "FoAttendance:start()",
         "desc": "initializer",
-        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "start",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "FoAttendance:start()",
         "stripped_doc": [
@@ -210,15 +210,15 @@
       {
         "def": "FoAttendance:stop()",
         "desc": "initializer",
-        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "stop",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "FoAttendance:stop()",
         "stripped_doc": [
@@ -230,15 +230,15 @@
       {
         "def": "FoAttendance:toggle()",
         "desc": "Toggle FoAttendance",
-        "doc": "Toggle FoAttendance\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon FoAttendance",
+        "doc": "Toggle FoAttendance\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon FoAttendance",
         "name": "toggle",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon FoAttendance"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon FoAttendance"
         ],
         "signature": "FoAttendance:toggle()",
         "stripped_doc": [
@@ -264,15 +264,15 @@
       {
         "def": "LastKeyRepeat:start()",
         "desc": "Start waching eventtap and application",
-        "doc": "Start waching eventtap and application\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat",
+        "doc": "Start waching eventtap and application\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon LastKeyRepeat",
         "name": "start",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon LastKeyRepeat"
         ],
         "signature": "LastKeyRepeat:start()",
         "stripped_doc": [
@@ -284,15 +284,15 @@
       {
         "def": "LastKeyRepeat:stop()",
         "desc": "stop waching eventtap and application",
-        "doc": "stop waching eventtap and application\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat",
+        "doc": "stop waching eventtap and application\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon LastKeyRepeat",
         "name": "stop",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon LastKeyRepeat"
         ],
         "signature": "LastKeyRepeat:stop()",
         "stripped_doc": [
@@ -304,15 +304,15 @@
       {
         "def": "LastKeyRepeat:init()",
         "desc": "initializer",
-        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat",
+        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon LastKeyRepeat",
         "name": "init",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon LastKeyRepeat"
         ],
         "signature": "LastKeyRepeat:init()",
         "stripped_doc": [
@@ -454,15 +454,15 @@
       {
         "def": "LastKeyRepeat:init()",
         "desc": "initializer",
-        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat",
+        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon LastKeyRepeat",
         "name": "init",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon LastKeyRepeat"
         ],
         "signature": "LastKeyRepeat:init()",
         "stripped_doc": [
@@ -474,15 +474,15 @@
       {
         "def": "LastKeyRepeat:start()",
         "desc": "Start waching eventtap and application",
-        "doc": "Start waching eventtap and application\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat",
+        "doc": "Start waching eventtap and application\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon LastKeyRepeat",
         "name": "start",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon LastKeyRepeat"
         ],
         "signature": "LastKeyRepeat:start()",
         "stripped_doc": [
@@ -494,15 +494,15 @@
       {
         "def": "LastKeyRepeat:stop()",
         "desc": "stop waching eventtap and application",
-        "doc": "stop waching eventtap and application\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat",
+        "doc": "stop waching eventtap and application\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon LastKeyRepeat",
         "name": "stop",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon LastKeyRepeat"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon LastKeyRepeat"
         ],
         "signature": "LastKeyRepeat:stop()",
         "stripped_doc": [
@@ -528,15 +528,15 @@
       {
         "def": "PseudoNumKey:start()",
         "desc": "Start Event Listener",
-        "doc": "Start Event Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "Start Event Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "start",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "PseudoNumKey:start()",
         "stripped_doc": [
@@ -548,15 +548,15 @@
       {
         "def": "PseudoNumKey:stop()",
         "desc": "Stop Event Listener",
-        "doc": "Stop Event Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "Stop Event Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "stop",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "PseudoNumKey:stop()",
         "stripped_doc": [
@@ -602,15 +602,15 @@
       {
         "def": "PseudoNumKey:start()",
         "desc": "Start Event Listener",
-        "doc": "Start Event Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "Start Event Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "start",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "PseudoNumKey:start()",
         "stripped_doc": [
@@ -622,15 +622,15 @@
       {
         "def": "PseudoNumKey:stop()",
         "desc": "Stop Event Listener",
-        "doc": "Stop Event Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "Stop Event Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "stop",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "PseudoNumKey:stop()",
         "stripped_doc": [
@@ -656,15 +656,15 @@
       {
         "def": "Snippet:init()",
         "desc": "initializer",
-        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon Snippet",
+        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon Snippet",
         "name": "init",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon Snippet"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon Snippet"
         ],
         "signature": "Snippet:init()",
         "stripped_doc": [
@@ -676,15 +676,15 @@
       {
         "def": "Snippet:showSnippet()",
         "desc": "Display the snippet in a chooser",
-        "doc": "Display the snippet in a chooser\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "Display the snippet in a chooser\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "showSnippet",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "Snippet:showSnippet()",
         "stripped_doc": [
@@ -696,15 +696,15 @@
       {
         "def": "Snippet:toggleSnippet()",
         "desc": "Show/hide the snippet list, depending on its current state",
-        "doc": "Show/hide the snippet list, depending on its current state\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "Show/hide the snippet list, depending on its current state\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "toggleSnippet",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "Snippet:toggleSnippet()",
         "stripped_doc": [
@@ -716,13 +716,13 @@
       {
         "def": "Snippet:bindHotkeys(mapping)",
         "desc": "Binds hotkeys for Snippet",
-        "doc": "Binds hotkeys for Snippet\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon show_snippet - Display the snippet chooser\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle_snippet - Show/hide the snippet chooser",
+        "doc": "Binds hotkeys for Snippet\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon mapping - A table containing hotkey objifier/key details for the following items:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon show_snippet - Display the snippet chooser\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon toggle_snippet - Show/hide the snippet chooser",
         "name": "bindHotkeys",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:",
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon show_snippet - Display the snippet chooser",
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle_snippet - Show/hide the snippet chooser"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon mapping - A table containing hotkey objifier/key details for the following items:",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon show_snippet - Display the snippet chooser",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon toggle_snippet - Show/hide the snippet chooser"
         ],
         "returns": [],
         "signature": "Snippet:bindHotkeys(mapping)",
@@ -769,13 +769,13 @@
       {
         "def": "Snippet:bindHotkeys(mapping)",
         "desc": "Binds hotkeys for Snippet",
-        "doc": "Binds hotkeys for Snippet\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon show_snippet - Display the snippet chooser\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle_snippet - Show/hide the snippet chooser",
+        "doc": "Binds hotkeys for Snippet\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon mapping - A table containing hotkey objifier/key details for the following items:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon show_snippet - Display the snippet chooser\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon toggle_snippet - Show/hide the snippet chooser",
         "name": "bindHotkeys",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon mapping - A table containing hotkey objifier/key details for the following items:",
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon show_snippet - Display the snippet chooser",
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon toggle_snippet - Show/hide the snippet chooser"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon mapping - A table containing hotkey objifier/key details for the following items:",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon show_snippet - Display the snippet chooser",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon toggle_snippet - Show/hide the snippet chooser"
         ],
         "returns": [],
         "signature": "Snippet:bindHotkeys(mapping)",
@@ -788,15 +788,15 @@
       {
         "def": "Snippet:init()",
         "desc": "initializer",
-        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon Snippet",
+        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon Snippet",
         "name": "init",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon Snippet"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon Snippet"
         ],
         "signature": "Snippet:init()",
         "stripped_doc": [
@@ -808,15 +808,15 @@
       {
         "def": "Snippet:showSnippet()",
         "desc": "Display the snippet in a chooser",
-        "doc": "Display the snippet in a chooser\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "Display the snippet in a chooser\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "showSnippet",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "Snippet:showSnippet()",
         "stripped_doc": [
@@ -828,15 +828,15 @@
       {
         "def": "Snippet:toggleSnippet()",
         "desc": "Show/hide the snippet list, depending on its current state",
-        "doc": "Show/hide the snippet list, depending on its current state\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+        "doc": "Show/hide the snippet list, depending on its current state\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
         "name": "toggleSnippet",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None"
         ],
         "signature": "Snippet:toggleSnippet()",
         "stripped_doc": [
@@ -862,15 +862,15 @@
       {
         "def": "SwitchableHotkey:bindSpec()",
         "desc": "Binds hotkey",
-        "doc": "Binds hotkey\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon keyspec\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+        "doc": "Binds hotkey\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon keyspec\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey",
         "name": "bindSpec",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon keyspec",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon keyspec",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey"
         ],
         "signature": "SwitchableHotkey:bindSpec()",
         "stripped_doc": [
@@ -882,15 +882,15 @@
       {
         "def": "SwitchableHotkey:start()",
         "desc": "Start Listener",
-        "doc": "Start Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+        "doc": "Start Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey",
         "name": "start",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey"
         ],
         "signature": "SwitchableHotkey:start()",
         "stripped_doc": [
@@ -902,15 +902,15 @@
       {
         "def": "SwitchableHotkey:stop()",
         "desc": "Stop Listener",
-        "doc": "Stop Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+        "doc": "Stop Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey",
         "name": "stop",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey"
         ],
         "signature": "SwitchableHotkey:stop()",
         "stripped_doc": [
@@ -922,15 +922,15 @@
       {
         "def": "SwitchableHotkey:init()",
         "desc": "initializer",
-        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey",
         "name": "init",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey"
         ],
         "signature": "SwitchableHotkey:init()",
         "stripped_doc": [
@@ -1024,15 +1024,15 @@
       {
         "def": "SwitchableHotkey:bindSpec()",
         "desc": "Binds hotkey",
-        "doc": "Binds hotkey\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon keyspec\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+        "doc": "Binds hotkey\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon keyspec\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey",
         "name": "bindSpec",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon keyspec",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon keyspec",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey"
         ],
         "signature": "SwitchableHotkey:bindSpec()",
         "stripped_doc": [
@@ -1044,15 +1044,15 @@
       {
         "def": "SwitchableHotkey:init()",
         "desc": "initializer",
-        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+        "doc": "initializer\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey",
         "name": "init",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey"
         ],
         "signature": "SwitchableHotkey:init()",
         "stripped_doc": [
@@ -1064,15 +1064,15 @@
       {
         "def": "SwitchableHotkey:start()",
         "desc": "Start Listener",
-        "doc": "Start Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+        "doc": "Start Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey",
         "name": "start",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey"
         ],
         "signature": "SwitchableHotkey:start()",
         "stripped_doc": [
@@ -1084,15 +1084,15 @@
       {
         "def": "SwitchableHotkey:stop()",
         "desc": "Stop Listener",
-        "doc": "Stop Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey",
+        "doc": "Stop Listener\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey",
         "name": "stop",
         "notes": [],
         "parameters": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon None",
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
           ""
         ],
         "returns": [
-          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon SwitchableHotkey"
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon SwitchableHotkey"
         ],
         "signature": "SwitchableHotkey:stop()",
         "stripped_doc": [
@@ -1103,6 +1103,190 @@
       }
     ],
     "name": "SwitchableHotkey",
+    "stripped_doc": [],
+    "submodules": [],
+    "type": "Module"
+  },
+  {
+    "Command": [],
+    "Constant": [],
+    "Constructor": [],
+    "Deprecated": [],
+    "Field": [],
+    "Function": [],
+    "Method": [
+      {
+        "def": "TextExpansion:start()",
+        "desc": "Start TextExpansion",
+        "doc": "Start TextExpansion\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon TextExpansion",
+        "name": "start",
+        "notes": [],
+        "parameters": [
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
+          ""
+        ],
+        "returns": [
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon TextExpansion"
+        ],
+        "signature": "TextExpansion:start()",
+        "stripped_doc": [
+          "Start TextExpansion",
+          ""
+        ],
+        "type": "Method"
+      },
+      {
+        "def": "TextExpansion:stop()",
+        "desc": "Stop TextExpansion",
+        "doc": "Stop TextExpansion\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon TextExpansion",
+        "name": "stop",
+        "notes": [],
+        "parameters": [
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
+          ""
+        ],
+        "returns": [
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon TextExpansion"
+        ],
+        "signature": "TextExpansion:stop()",
+        "stripped_doc": [
+          "Stop TextExpansion",
+          ""
+        ],
+        "type": "Method"
+      }
+    ],
+    "Variable": [
+      {
+        "def": "TextExpansion.logger",
+        "desc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "doc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "name": "logger",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "TextExpansion.logger",
+        "stripped_doc": [
+          "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon."
+        ],
+        "type": "Variable"
+      },
+      {
+        "def": "TextExpansion.keywords",
+        "desc": "Map of keywords to strings or functions that return a string to be replaced.",
+        "doc": "Map of keywords to strings or functions that return a string to be replaced.",
+        "name": "keywords",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "TextExpansion.keywords",
+        "stripped_doc": [
+          "Map of keywords to strings or functions that return a string to be replaced."
+        ],
+        "type": "Variable"
+      },
+      {
+        "def": "TextExpansion.prefix",
+        "desc": "Trigger character for TextExpansion to start watching keywords.",
+        "doc": "Trigger character for TextExpansion to start watching keywords.",
+        "name": "prefix",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "TextExpansion.prefix",
+        "stripped_doc": [
+          "Trigger character for TextExpansion to start watching keywords."
+        ],
+        "type": "Variable"
+      }
+    ],
+    "desc": "Typing prefix and keyword expands pre-set words or function.",
+    "doc": "Typing prefix and keyword expands pre-set words or function.\n\nBased on: https://github.com/Hammerspoon/hammerspoon/issues/1042\n\nDownload: [https://github.com/doiken/Spoons/raw/master/Spoons/TextExpansion.spoon.zip](https://github.com/doiken/Spoons/raw/master/Spoons/TextExpansion.spoon.zip)\n\nHOW TO USE:\n 1. SETUP(see SETUP section)\n 2. type prefix and keyword you set. e.g.\n - `;greeting`\n - `;date`\n 3. enjoy :)\n\nSETUP:\n\n install manually\n ```\n te = hs.loadSpoon(\"TextExpansion\")\n te.keywords ={\n greeting = \"hello\",\n date = function() return os.date(\"%B %d, %Y\") end,\n }\n te.prefix = ';'\n te:start()\n ```\n\n install using SpoonInstall\n ```\n hs.loadSpoon(\"SpoonInstall\")\n spoon.SpoonInstall.repos.doiken = {\n url = \"https://github.com/doiken/Spoons\",\n desc = \"doiken's spoon repository\",\n }\n spoon.SpoonInstall:andUse(\"TextExpansion\", {\n repo = 'doiken',\n loglevel = \"warning\",\n config = {\n keywords = {\n ...\n },\n prefix = ','\n },\n start = true\n })\n ```\n\nNOTE: TextExpansion expands text via clipboard",
+    "items": [
+      {
+        "def": "TextExpansion.keywords",
+        "desc": "Map of keywords to strings or functions that return a string to be replaced.",
+        "doc": "Map of keywords to strings or functions that return a string to be replaced.",
+        "name": "keywords",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "TextExpansion.keywords",
+        "stripped_doc": [
+          "Map of keywords to strings or functions that return a string to be replaced."
+        ],
+        "type": "Variable"
+      },
+      {
+        "def": "TextExpansion.logger",
+        "desc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "doc": "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.",
+        "name": "logger",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "TextExpansion.logger",
+        "stripped_doc": [
+          "Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon."
+        ],
+        "type": "Variable"
+      },
+      {
+        "def": "TextExpansion.prefix",
+        "desc": "Trigger character for TextExpansion to start watching keywords.",
+        "doc": "Trigger character for TextExpansion to start watching keywords.",
+        "name": "prefix",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "TextExpansion.prefix",
+        "stripped_doc": [
+          "Trigger character for TextExpansion to start watching keywords."
+        ],
+        "type": "Variable"
+      },
+      {
+        "def": "TextExpansion:start()",
+        "desc": "Start TextExpansion",
+        "doc": "Start TextExpansion\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon TextExpansion",
+        "name": "start",
+        "notes": [],
+        "parameters": [
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
+          ""
+        ],
+        "returns": [
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon TextExpansion"
+        ],
+        "signature": "TextExpansion:start()",
+        "stripped_doc": [
+          "Start TextExpansion",
+          ""
+        ],
+        "type": "Method"
+      },
+      {
+        "def": "TextExpansion:stop()",
+        "desc": "Stop TextExpansion",
+        "doc": "Stop TextExpansion\n\nParameters:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None\n\nReturns:\n FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon TextExpansion",
+        "name": "stop",
+        "notes": [],
+        "parameters": [
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon None",
+          ""
+        ],
+        "returns": [
+          " FoAttendance.spoon LastKeyRepeat.spoon PseudoNumKey.spoon Snippet.spoon SwitchableHotkey.spoon TextExpansion.spoon TextExpansion"
+        ],
+        "signature": "TextExpansion:stop()",
+        "stripped_doc": [
+          "Stop TextExpansion",
+          ""
+        ],
+        "type": "Method"
+      }
+    ],
+    "name": "TextExpansion",
     "stripped_doc": [],
     "submodules": [],
     "type": "Module"

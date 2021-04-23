@@ -19,11 +19,11 @@ for source in $(ls -d */ | perl -pe 's|/$||g' | xargs echo); do
     out=$(hs -c "hs.doc.builder.genJSON('${d}')" | grep -v "^--" | /usr/local/bin/jq --sort-keys)
     if [ $(echo "$out" | md5) != "$(md5 -q ${d}/docs.json)" ]; then
         echo $out > ${d}/docs.json
+        # since its hard to check zip diff, update zip when json updated
+        (
+            zip -Xr ../Spoons/${source}.zip ./${source}
+        )
     fi
     json="${json} ${out}"
-
-    (
-        zip -Xr ../Spoons/${source}.zip ./${source}
-    )
 done
 echo $json | /usr/local/bin/jq --sort-keys --slurp add > "${root_dir}/docs/docs.json"
