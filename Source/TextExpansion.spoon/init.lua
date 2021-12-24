@@ -74,10 +74,29 @@ obj.keywords = {
 --- Trigger character for TextExpansion to start watching keywords.
 obj.prefix = ';'
 
+--- TextExpansion.macroStartBy
+--- Variable
+--- Prefix for Macro Keyword.
+obj.macroStartBy = '@'
+
 obj._word = "" -- keyword stacked here
 obj._isWaitingKeywords = false -- true when prefix input
 
 local keyMap = hs.keycodes.map
+
+obj._macros = {
+  clipboard = function ()
+    return hs.pasteboard.getContents()
+  end,
+}
+
+function obj:_replaceMacro(replacement)
+  for macro, f in pairs(obj._macros) do
+    -- try gsub with (...) ahead in order not to remove only macro word
+    replacement = replacement:gsub(obj.macroStartBy .. macro, f)
+  end
+  return replacement
+end
 
 function obj:_expand(replacement)
   if type(replacement) == "function" then -- expand if function
@@ -91,6 +110,7 @@ function obj:_expand(replacement)
     end
     replacement = o
   end
+  replacement = obj:_replaceMacro(replacement)
 
   -- since directly type "delete" seems to conflict with following keyStrokes,
   -- just select word to replace it by following keyStrokes
