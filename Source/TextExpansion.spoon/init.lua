@@ -117,11 +117,11 @@ function obj:_replaceMacro(replacement, shouldExpandMacro)
   return replacement
 end
 
-function obj:_expand(replacement, shouldExpandMacro)
+function obj:_expand(replacement, word)
   if type(replacement) == "function" then -- expand if function
     local _, o = pcall(replacement)
     if not _ then
-      self.logger.ef("~~ expansion for '%s' gave an error of %s", self._word, o)
+      self.logger.ef("~~ expansion for '%s' gave an error of %s", word, o)
       -- could also set o to nil here so that the expansion doesn't occur below, but I think
       -- seeing the error as the replacement will be a little more obvious that a print to the
       -- console which I may or may not have open at the time...
@@ -129,11 +129,11 @@ function obj:_expand(replacement, shouldExpandMacro)
     end
     replacement = o
   end
-  replacement = obj:_replaceMacro(replacement, shouldExpandMacro)
+  replacement = obj:_replaceMacro(replacement, self:_shouldExpandMacro(word))
 
   -- since directly type "delete" seems to conflict with following keyStrokes,
   -- just select word to replace it by following keyStrokes
-  for i = 1, #self._word do
+  for i = 1, #word do
     hs.eventtap.keyStroke({'shift'}, "left", 0)
   end
   
@@ -159,40 +159,47 @@ function obj:_shouldClear(keyCode)
   return false
 end
 
-function obj:_waitKeywords(keyCode, char)
+function obj:_findKeyword(word)
+  local _word = self.secondPrefixEnablingMacro
+                 and word:gsub("^" .. self.secondPrefixEnablingMacro, "")
+                 or word
+  return self.keywords[_word]
+end
+
+function obj:_shouldExpandMacro(word)
+  return self.secondPrefixEnablingMacro == ""
+    or self.secondPrefixEnablingMacro == word:sub(1, 1)
+end
+
+function obj:_waitKeywords(word, keyCode, char)
   -- if "delete" key is pressed, remove last character
   if keyCode == keyMap["delete"] then
-      if #self._word > 0 then
-          self._word = self._word:sub(1, -2)
+      if #word > 0 then
+          word = word:sub(1, -2)
       end
-      return false -- pass the "delete" keystroke on to the application
+      return word, false -- pass the "delete" keystroke on to the application
   end
 
-  self._word = self._word .. char
-  self.logger.df("Word after appending:%s", self._word)
+  word = word .. char
+  self.logger.df("Word after appending:%s", word)
 
   if self:_shouldClear(keyCode) then
       self._isWaitingKeywords = false
-      return false
+      return word, false
   end
 
-  self.logger.df("Word to check if keyword: %s", self._word)
+  self.logger.df("Word to check if keyword: %s", word)
 
-  -- finally, if "self._word" is a hotstring
-  local word = self.secondPrefixEnablingMacro
-                 and self._word:gsub("^" .. self.secondPrefixEnablingMacro, "")
-                 or self._word
-  local replacement = self.keywords[word]
+  -- finally, if "word" is a hotstring
+  local replacement = self:_findKeyword(word)
   if replacement then
     -- disable listener not to capture keystroke
     self._isWaitingKeywords = false
-    local shouldExpandMacro = self.secondPrefixEnablingMacro == ""
-      or self.secondPrefixEnablingMacro == self._word:sub(1, 1)
-    self:_expand(replacement, shouldExpandMacro)
-    return true -- prevent the event not to type last charcter
+    self:_expand(replacement, word)
+    return word, true -- prevent the event not to type last charcter
   end
 
-  return false -- pass the event on to the application
+  return word, false -- pass the event on to the application
 end
 
 function obj:_handler(e)
@@ -204,7 +211,10 @@ function obj:_handler(e)
     self._isWaitingKeywords = true
     self._word = ''
   elseif obj._isWaitingKeywords then
-    return self:_waitKeywords(keyCode, char)
+    local word, isHit = self:_waitKeywords(self._word, keyCode, char)
+    self._word = word
+    -- when word hit, prevent the event not to type last charcter
+    return isHit
   end
   return false
 end
