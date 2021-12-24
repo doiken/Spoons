@@ -74,6 +74,11 @@ obj.keywords = {
 --- Trigger character for TextExpansion to start watching keywords.
 obj.prefix = ';'
 
+--- TextExpansion.secondPrefixEnablingMacro
+--- Variable
+--- Second Prefix to enable replacing macro. If empty, macro always replaced.
+obj.secondPrefixEnablingMacro = '+'
+
 --- TextExpansion.macroStartBy
 --- Variable
 --- Prefix for Macro Keyword.
@@ -90,15 +95,16 @@ obj._macros = {
   end,
 }
 
-function obj:_replaceMacro(replacement)
+function obj:_replaceMacro(replacement, shouldExpandMacro)
   for macro, f in pairs(obj._macros) do
+    if not shouldExpandMacro then f = "" end
     -- try gsub with (...) ahead in order not to remove only macro word
     replacement = replacement:gsub(obj.macroStartBy .. macro, f)
   end
   return replacement
 end
 
-function obj:_expand(replacement)
+function obj:_expand(replacement, shouldExpandMacro)
   if type(replacement) == "function" then -- expand if function
     local _, o = pcall(replacement)
     if not _ then
@@ -110,7 +116,7 @@ function obj:_expand(replacement)
     end
     replacement = o
   end
-  replacement = obj:_replaceMacro(replacement)
+  replacement = obj:_replaceMacro(replacement, shouldExpandMacro)
 
   -- since directly type "delete" seems to conflict with following keyStrokes,
   -- just select word to replace it by following keyStrokes
@@ -160,11 +166,16 @@ function obj:_waitKeywords(keyCode, char)
   self.logger.df("Word to check if keyword: %s", self._word)
 
   -- finally, if "self._word" is a hotstring
-  local replacement = self.keywords[self._word]
+  local word = self.secondPrefixEnablingMacro
+                 and self._word:gsub("^" .. self.secondPrefixEnablingMacro, "")
+                 or self._word
+  local replacement = self.keywords[word]
   if replacement then
     -- disable listener not to capture keystroke
     self._isWaitingKeywords = false
-    self:_expand(replacement)
+    local shouldExpandMacro = self.secondPrefixEnablingMacro == ""
+      or self.secondPrefixEnablingMacro == self._word:sub(1, 1)
+    self:_expand(replacement, shouldExpandMacro)
     return true -- prevent the event not to type last charcter
   end
 
