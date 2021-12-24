@@ -14,12 +14,12 @@
 ---   3. enjoy :)
 ---
 --- SETUP:
----
 ---   install manually
 ---   ```
 ---   te = hs.loadSpoon("TextExpansion")
 ---   te.keywords ={
 ---      greeting = "hello",
+---      greeting_with_macro = "hello @clipboard",
 ---      date = function() return os.date("%B %d, %Y") end,
 ---   }
 ---   te.prefix = ';'
@@ -46,12 +46,24 @@
 ---   })
 ---   ```
 ---
+--- MACROS:
+---   You can use following macros in your return string.
+---       - `@clipboard`: replace with string in clipboard
+---       - note: If you want to change macro prefix "@", set character into variable `macroStartBy`.
+---   You can enable macro replacement to type preset charactor, default: "+".
+---   Without preset character, macro is just removed.
+---   e.g.
+---       - `;greeting_with_macro`  -> hello 
+---       - `;+greeting_with_macro` -> hello NAME_ON_YOUR_CLIPBOARD
+---   You can change preset character by setting `secondPrefixEnablingMacro`.
+---   You can enable macro always without typing preset charactor by setting empty string.
+---
 --- NOTE: TextExpansion expands text via clipboard
 
 local obj = {}
 -- Metadata
 obj.name = "TextExpansion"
-obj.version = "1.0"
+obj.version = "1.1"
 obj.author = "Multiple Authors"
 obj.homepage = "https://github.com/doiken/Spoons"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
@@ -65,8 +77,9 @@ obj.logger = hs.logger.new(debug.getinfo(1,'S').source)
 --- Variable
 --- Map of keywords to strings or functions that return a string to be replaced.
 obj.keywords = {
-  name = "My name",
-  addr = "My address",
+  greeting = "hello",
+  greeting_with_macro = "hello @clipboard",
+  date = function() return os.date("%B %d, %Y") end,
 }
 
 --- TextExpansion.prefix
