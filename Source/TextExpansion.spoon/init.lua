@@ -48,14 +48,18 @@
 ---
 --- MACROS:
 ---   You can use following macros in your return string.
----       - `@clipboard`: replace with string in clipboard
----       - note: If you want to change macro prefix "@", set character into variable `macroStartBy`.
+---   - `@clipboard`: replace with string in clipboard
+---   - note: If you want to change macro prefix "@", set character into variable `macroStartBy`.
+---
 ---   You can enable macro replacement to type preset charactor, default: "+".
+---
 ---   Without preset character, macro is just removed.
 ---   e.g.
----       - `;greeting_with_macro`  -> hello 
----       - `;+greeting_with_macro` -> hello NAME_ON_YOUR_CLIPBOARD
+---   - `;greeting_with_macro`  -> hello 
+---   - `;+greeting_with_macro` -> hello NAME_ON_YOUR_CLIPBOARD
+---
 ---   You can change preset character by setting `secondPrefixEnablingMacro`.
+---
 ---   You can enable macro always without typing preset charactor by setting empty string.
 ---
 --- NOTE: TextExpansion expands text via clipboard

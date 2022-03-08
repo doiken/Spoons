@@ -15,12 +15,12 @@ HOW TO USE:
   3. enjoy :)
 
 SETUP:
-
   install manually
   ```
   te = hs.loadSpoon("TextExpansion")
   te.keywords ={
      greeting = "hello",
+     greeting_with_macro = "hello @clipboard",
      date = function() return os.date("%B %d, %Y") end,
   }
   te.prefix = ';'
@@ -47,13 +47,31 @@ SETUP:
   })
   ```
 
+MACROS:
+  You can use following macros in your return string.
+  - `@clipboard`: replace with string in clipboard
+  - note: If you want to change macro prefix "@", set character into variable `macroStartBy`.
+
+  You can enable macro replacement to type preset charactor, default: "+".
+
+  Without preset character, macro is just removed.
+  e.g.
+  - `;greeting_with_macro`  -> hello 
+  - `;+greeting_with_macro` -> hello NAME_ON_YOUR_CLIPBOARD
+
+  You can change preset character by setting `secondPrefixEnablingMacro`.
+
+  You can enable macro always without typing preset charactor by setting empty string.
+
 NOTE: TextExpansion expands text via clipboard
 
 ## API Overview
 * Variables - Configurable values
  * [keywords](#keywords)
  * [logger](#logger)
+ * [macroStartBy](#macroStartBy)
  * [prefix](#prefix)
+ * [secondPrefixEnablingMacro](#secondPrefixEnablingMacro)
 * Methods - API calls which can only be made on an object returned by a constructor
  * [start](#start)
  * [stop](#stop)
@@ -74,11 +92,23 @@ NOTE: TextExpansion expands text via clipboard
 | **Type**                                    | Variable                                                                     |
 | **Description**                             | Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.                                                                     |
 
+| [macroStartBy](#macroStartBy)         |                                                                                     |
+| --------------------------------------------|-------------------------------------------------------------------------------------|
+| **Signature**                               | `TextExpansion.macroStartBy`                                                                    |
+| **Type**                                    | Variable                                                                     |
+| **Description**                             | Prefix for Macro Keyword.                                                                     |
+
 | [prefix](#prefix)         |                                                                                     |
 | --------------------------------------------|-------------------------------------------------------------------------------------|
 | **Signature**                               | `TextExpansion.prefix`                                                                    |
 | **Type**                                    | Variable                                                                     |
 | **Description**                             | Trigger character for TextExpansion to start watching keywords.                                                                     |
+
+| [secondPrefixEnablingMacro](#secondPrefixEnablingMacro)         |                                                                                     |
+| --------------------------------------------|-------------------------------------------------------------------------------------|
+| **Signature**                               | `TextExpansion.secondPrefixEnablingMacro`                                                                    |
+| **Type**                                    | Variable                                                                     |
+| **Description**                             | Second Prefix to enable replacing macro. If empty, macro always replaced.                                                                     |
 
 ### Methods
 
