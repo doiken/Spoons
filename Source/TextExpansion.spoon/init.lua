@@ -101,6 +101,11 @@ obj.secondPrefixEnablingMacro = '+'
 --- Prefix for Macro Keyword.
 obj.macroStartBy = '@'
 
+--- TextExpansion.addHelp
+--- Variable
+--- Add `help` keyword to show the list of available keywords.
+obj.addHelp = true
+
 obj._word = "" -- keyword stacked here
 obj._isWaitingKeywords = false -- true when prefix input
 
@@ -225,6 +230,17 @@ end
 
 obj._eventListener = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function (e) return obj:_handler(e) end)
 
+local function help()
+  local keyset={}
+  local n=0
+
+  for k,v in pairs(obj.keywords) do
+    n=n+1
+    keyset[n]=obj.prefix .. k
+  end
+  return table.concat(keyset, "\n")
+end
+
 --- TextExpansion:start()
 --- Method
 --- Start TextExpansion
@@ -235,6 +251,9 @@ obj._eventListener = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function
 --- Returns:
 ---  * TextExpansion
 function obj:start()
+  if obj.addHelp then
+      obj.keywords["help"] = help
+  end
   obj._eventListener:start()
   return obj
 end
