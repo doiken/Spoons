@@ -1254,11 +1254,39 @@
           "Prefix for Macro Keyword."
         ],
         "type": "Variable"
+      },
+      {
+        "def": "TextExpansion.addHelp",
+        "desc": "Add `help` keyword to show the list of available keywords.",
+        "doc": "Add `help` keyword to show the list of available keywords.",
+        "name": "addHelp",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "TextExpansion.addHelp",
+        "stripped_doc": [
+          "Add `help` keyword to show the list of available keywords."
+        ],
+        "type": "Variable"
       }
     ],
     "desc": "Typing prefix and keyword expands pre-set words or function.",
     "doc": "Typing prefix and keyword expands pre-set words or function.\n\nBased on: https://github.com/Hammerspoon/hammerspoon/issues/1042\n\nDownload: [https://github.com/doiken/Spoons/raw/master/Spoons/TextExpansion.spoon.zip](https://github.com/doiken/Spoons/raw/master/Spoons/TextExpansion.spoon.zip)\n\nHOW TO USE:\n 1. SETUP(see SETUP section)\n 2. type prefix and keyword you set. e.g.\n - `;greeting`\n - `;date`\n 3. enjoy :)\n\nSETUP:\n install manually\n ```\n te = hs.loadSpoon(\"TextExpansion\")\n te.keywords ={\n greeting = \"hello\",\n greeting_with_macro = \"hello @clipboard\",\n date = function() return os.date(\"%B %d, %Y\") end,\n }\n te.prefix = ';'\n te:start()\n ```\n\n install using SpoonInstall\n ```\n hs.loadSpoon(\"SpoonInstall\")\n spoon.SpoonInstall.repos.doiken = {\n url = \"https://github.com/doiken/Spoons\",\n desc = \"doiken's spoon repository\",\n }\n spoon.SpoonInstall:andUse(\"TextExpansion\", {\n repo = 'doiken',\n loglevel = \"warning\",\n config = {\n keywords = {\n ...\n },\n prefix = ','\n },\n start = true\n })\n ```\n\nMACROS:\n You can use following macros in your return string.\n - `@clipboard`: replace with string in clipboard\n - note: If you want to change macro prefix \"@\", set character into variable `macroStartBy`.\n\n You can enable macro replacement to type preset charactor, default: \"+\".\n\n Without preset character, macro is just removed.\n e.g.\n - `;greeting_with_macro` -> hello \n - `;+greeting_with_macro` -> hello NAME_ON_YOUR_CLIPBOARD\n\n You can change preset character by setting `secondPrefixEnablingMacro`.\n\n You can enable macro always without typing preset charactor by setting empty string.\n\nNOTE: TextExpansion expands text via clipboard",
     "items": [
+      {
+        "def": "TextExpansion.addHelp",
+        "desc": "Add `help` keyword to show the list of available keywords.",
+        "doc": "Add `help` keyword to show the list of available keywords.",
+        "name": "addHelp",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "TextExpansion.addHelp",
+        "stripped_doc": [
+          "Add `help` keyword to show the list of available keywords."
+        ],
+        "type": "Variable"
+      },
       {
         "def": "TextExpansion.keywords",
         "desc": "Map of keywords to strings or functions that return a string to be replaced.",
