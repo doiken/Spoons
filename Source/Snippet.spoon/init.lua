@@ -107,7 +107,7 @@ local function processSelectedItem(value)
    end
    if value and type(value) == "table" then
       if value.action and actions[value.action] then
-        contents = actions[value.action](value)
+        local contents = actions[value.action](value)
         if contents then
           hs.pasteboard.setContents(contents)
           hs.eventtap.keyStroke({"cmd"}, "v")
