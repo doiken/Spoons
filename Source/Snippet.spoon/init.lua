@@ -78,10 +78,18 @@ obj._prevFocusedWindow = nil
 --- See description on top to see format and example.
 obj.snippets = {}
 
+--- Snippet.lang_in_shell
+--- Variable
+--- Specify if you want to use it to solve multibyte character problems, etc. 
+obj.lang_in_shell = nil
+
 local actions = {
    none = function() end,
    text = function(v) return v.contents end,
-   shell = function(v) return hs.execute(v.contents) end,
+   shell = function(v)
+      local lang = obj.lang_in_shell and ("env LANG='%s' "):format(obj.lang_in_shell) or ""
+      return hs.execute(lang .. v.contents)
+   end,
    hs = function(v)
       local res = obj._contentsMap[v.contents]()
       if type(res) == "string" then
