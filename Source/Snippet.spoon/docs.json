@@ -101,11 +101,39 @@
           "See description on top to see format and example."
         ],
         "type": "Variable"
+      },
+      {
+        "def": "Snippet.lang_in_shell",
+        "desc": "Specify if you want to use it to solve multibyte character problems, etc.",
+        "doc": "Specify if you want to use it to solve multibyte character problems, etc.",
+        "name": "lang_in_shell",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "Snippet.lang_in_shell",
+        "stripped_doc": [
+          "Specify if you want to use it to solve multibyte character problems, etc."
+        ],
+        "type": "Variable"
       }
     ],
     "desc": "Manage various kinds of snippets.",
     "doc": "Manage various kinds of snippets.\n\n![demo](snippet.gif)\n\nYou can register snippets on Snippet.snippets.\nThe format is bellow:\n```\n{\n    text = \"TEXT\",\n    action = \"ACTION_NAME\",\n    contents = \"CONTENTS\",\n}\n```\n- text: index to choose snippet.\n- action: \"text\" or \"shell\" or \"hs\" or \"nest\".\n- contents: depends on ACTION_NAME.\n  - text: directly used.\n  - shell: evaluated as shell script.\n  - hs: called as hammerspoon function.\n  - nest: table of nested snippets.\n\ne.g.\n```\nspoon.Snippet.snippets = {\n  {\n    text = \"text: simple text\",\n    action = \"text\",\n    contents = \"simple text\\n\",\n  },\n  {\n    text = \"shell: echo Hello\",\n    action = \"shell\",\n    contents = \"echo Hello\",\n  },\n  {\n    text = \"hs: hs.hash.MD5('string')\",\n    action = \"hs\",\n    contents = function () return hs.hash.MD5(\"notify\", \"\", \"\") end,\n  },\n  {\n    text = \"nest\",\n    action = \"nest\",\n    contents = {\n      {\n        text = \"text: nested text\",\n        action = \"text\",\n        contents = \"nested text\",\n      },\n    },\n  },\n}\n```\n\nDownload: [https://github.com/doiken/Spoons/raw/master/Spoons/Snippet.spoon.zip](https://github.com/doiken/Spoons/raw/master/Spoons/Snippet.spoon.zip)",
     "items": [
+      {
+        "def": "Snippet.lang_in_shell",
+        "desc": "Specify if you want to use it to solve multibyte character problems, etc.",
+        "doc": "Specify if you want to use it to solve multibyte character problems, etc.",
+        "name": "lang_in_shell",
+        "notes": [],
+        "parameters": [],
+        "returns": [],
+        "signature": "Snippet.lang_in_shell",
+        "stripped_doc": [
+          "Specify if you want to use it to solve multibyte character problems, etc."
+        ],
+        "type": "Variable"
+      },
       {
         "def": "Snippet.snippets",
         "desc": "See description on top to see format and example.",
