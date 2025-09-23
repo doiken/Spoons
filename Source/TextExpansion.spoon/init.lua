@@ -55,7 +55,7 @@
 ---
 ---   Without preset character, macro is just removed.
 ---   e.g.
----   - `;greeting_with_macro`  -> hello 
+---   - `;greeting_with_macro`  -> hello
 ---   - `;+greeting_with_macro` -> hello NAME_ON_YOUR_CLIPBOARD
 ---
 ---   You can change preset character by setting `secondPrefixEnablingMacro`.
@@ -67,7 +67,7 @@
 local obj = {}
 -- Metadata
 obj.name = "TextExpansion"
-obj.version = "1.1"
+obj.version = "1.2"
 obj.author = "Multiple Authors"
 obj.homepage = "https://github.com/doiken/Spoons"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
@@ -75,7 +75,7 @@ obj.license = "MIT - https://opensource.org/licenses/MIT"
 --- TextExpansion.logger
 --- Variable
 --- Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.
-obj.logger = hs.logger.new(debug.getinfo(1,'S').source)
+obj.logger = hs.logger.new(debug.getinfo(1, 'S').source)
 
 --- TextExpansion.keywords
 --- Variable
@@ -106,16 +106,23 @@ obj.macroStartBy = '@'
 --- Add `help` keyword to show the list of available keywords.
 obj.addHelp = true
 
-obj._word = "" -- keyword stacked here
+--- TextExpansion.limitCandidate
+--- Variable
+--- Number of candidate to show
+obj.limitCandidate = 10
+
+obj._word = ""                 -- keyword stacked here
 obj._isWaitingKeywords = false -- true when prefix input
 
 local keyMap = hs.keycodes.map
 
 obj._macros = {
-  clipboard = function ()
+  clipboard = function()
     return hs.pasteboard.getContents()
   end,
 }
+
+obj._candidate = nil
 
 function obj:_replaceMacro(replacement, shouldExpandMacro)
   for macro, f in pairs(obj._macros) do
@@ -143,9 +150,9 @@ function obj:_expand(replacement, word)
   -- since directly type "delete" seems to conflict with following keyStrokes,
   -- just select word to replace it by following keyStrokes
   for i = 1, #word do
-    hs.eventtap.keyStroke({'shift'}, "left", 0)
+    hs.eventtap.keyStroke({"shift"}, "left", 0)
   end
-  
+
   if replacement == '' then
     hs.eventtap.keyStroke({}, "Delete") -- just remove keyword
   else
@@ -158,11 +165,11 @@ end
 function obj:_shouldClear(keyCode)
   -- if one of these "navigational" keys is pressed
   if keyCode == keyMap["return"]
-    or keyCode == keyMap["space"]
-    or keyCode == keyMap["up"]
-    or keyCode == keyMap["down"]
-    or keyCode == keyMap["left"]
-    or keyCode == keyMap["right"] then
+      or keyCode == keyMap["space"]
+      or keyCode == keyMap["up"]
+      or keyCode == keyMap["down"]
+      or keyCode == keyMap["left"]
+      or keyCode == keyMap["right"] then
     return true
   end
   return false
@@ -170,31 +177,33 @@ end
 
 function obj:_findKeyword(word)
   local _word = self.secondPrefixEnablingMacro
-                 and word:gsub("^" .. self.secondPrefixEnablingMacro, "")
-                 or word
+    and word:gsub("^" .. self.secondPrefixEnablingMacro, "")
+    or word
   return self.keywords[_word]
 end
 
 function obj:_shouldExpandMacro(word)
   return self.secondPrefixEnablingMacro == ""
-    or self.secondPrefixEnablingMacro == word:sub(1, 1)
+      or self.secondPrefixEnablingMacro == word:sub(1, 1)
 end
 
 function obj:_waitKeywords(word, keyCode, char)
   -- if "delete" key is pressed, remove last character
   if keyCode == keyMap["delete"] then
-      if #word > 0 then
-          word = word:sub(1, -2)
-      end
-      return word, false -- pass the "delete" keystroke on to the application
+    if #word > 0 then
+      word = word:sub(1, -2)
+    end
+    self._candidate:update(word)
+    return word, false   -- pass the "delete" keystroke on to the application
   end
 
   word = word .. char
   self.logger.df("Word after appending:%s", word)
 
   if self:_shouldClear(keyCode) then
-      self._isWaitingKeywords = false
-      return word, false
+    self._isWaitingKeywords = false
+    self._candidate:clear()
+    return word, false
   end
 
   self.logger.df("Word to check if keyword: %s", word)
@@ -202,12 +211,14 @@ function obj:_waitKeywords(word, keyCode, char)
   -- finally, if "word" is a hotstring
   local replacement = self:_findKeyword(word)
   if replacement then
+    self._candidate:clear()
     -- disable listener not to capture keystroke
     self._isWaitingKeywords = false
     self:_expand(replacement, word)
     return word, true -- prevent the event not to type last charcter
   end
 
+  self._candidate:update(word)
   return word, false -- pass the event on to the application
 end
 
@@ -219,6 +230,7 @@ function obj:_handler(e)
   if char == obj.prefix then
     self._isWaitingKeywords = true
     self._word = ''
+    self._candidate:update("", obj.keywords)
   elseif obj._isWaitingKeywords then
     local word, isHit = self:_waitKeywords(self._word, keyCode, char)
     self._word = word
@@ -228,15 +240,15 @@ function obj:_handler(e)
   return false
 end
 
-obj._eventListener = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function (e) return obj:_handler(e) end)
+obj._eventListener = hs.eventtap.new({ hs.eventtap.event.types.keyDown }, function(e) return obj:_handler(e) end)
 
 local function help()
-  local keyset={}
-  local n=0
+  local keyset = {}
+  local n = 0
 
-  for k,v in pairs(obj.keywords) do
-    n=n+1
-    keyset[n]=obj.prefix .. k
+  for k, v in pairs(obj.keywords) do
+    n = n + 1
+    keyset[n] = obj.prefix .. k
   end
   return table.concat(keyset, "\n")
 end
@@ -252,8 +264,11 @@ end
 ---  * TextExpansion
 function obj:start()
   if obj.addHelp then
-      obj.keywords["help"] = help
+    obj.keywords["help"] = help
   end
+  obj._candidate = dofile(hs.spoons.scriptPath() .. "candidate.lua").new(
+    obj.keywords, obj.limitCandidate
+  )
   obj._eventListener:start()
   return obj
 end
