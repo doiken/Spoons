@@ -67,7 +67,9 @@ NOTE: TextExpansion expands text via clipboard
 
 ## API Overview
 * Variables - Configurable values
+ * [addHelp](#addHelp)
  * [keywords](#keywords)
+ * [limitCandidate](#limitCandidate)
  * [logger](#logger)
  * [macroStartBy](#macroStartBy)
  * [prefix](#prefix)
@@ -80,11 +82,23 @@ NOTE: TextExpansion expands text via clipboard
 
 ### Variables
 
+| [addHelp](#addHelp)         |                                                                                     |
+| --------------------------------------------|-------------------------------------------------------------------------------------|
+| **Signature**                               | `TextExpansion.addHelp`                                                                    |
+| **Type**                                    | Variable                                                                     |
+| **Description**                             | Add `help` keyword to show the list of available keywords.                                                                     |
+
 | [keywords](#keywords)         |                                                                                     |
 | --------------------------------------------|-------------------------------------------------------------------------------------|
 | **Signature**                               | `TextExpansion.keywords`                                                                    |
 | **Type**                                    | Variable                                                                     |
 | **Description**                             | Map of keywords to strings or functions that return a string to be replaced.                                                                     |
+
+| [limitCandidate](#limitCandidate)         |                                                                                     |
+| --------------------------------------------|-------------------------------------------------------------------------------------|
+| **Signature**                               | `TextExpansion.limitCandidate`                                                                    |
+| **Type**                                    | Variable                                                                     |
+| **Description**                             | Number of candidate to show                                                                     |
 
 | [logger](#logger)         |                                                                                     |
 | --------------------------------------------|-------------------------------------------------------------------------------------|
@@ -119,6 +133,7 @@ NOTE: TextExpansion expands text via clipboard
 | **Description**                             | Start TextExpansion                                                                     |
 | **Parameters**                              | <ul><li>None</li></ul> |
 | **Returns**                                 | <ul><li>TextExpansion</li></ul>          |
+| **Notes**                                   | <ul></ul>                |
 
 | [stop](#stop)         |                                                                                     |
 | --------------------------------------------|-------------------------------------------------------------------------------------|
@@ -127,4 +142,5 @@ NOTE: TextExpansion expands text via clipboard
 | **Description**                             | Stop TextExpansion                                                                     |
 | **Parameters**                              | <ul><li>None</li></ul> |
 | **Returns**                                 | <ul><li>TextExpansion</li></ul>          |
+| **Notes**                                   | <ul></ul>                |
 
