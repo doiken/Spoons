@@ -67,7 +67,7 @@
 local obj = {}
 -- Metadata
 obj.name = "TextExpansion"
-obj.version = "1.1"
+obj.version = "1.2"
 obj.author = "Multiple Authors"
 obj.homepage = "https://github.com/doiken/Spoons"
 obj.license = "MIT - https://opensource.org/licenses/MIT"
@@ -121,6 +121,8 @@ obj._macros = {
     return hs.pasteboard.getContents()
   end,
 }
+
+obj._candidate = nil
 
 function obj:_replaceMacro(replacement, shouldExpandMacro)
   for macro, f in pairs(obj._macros) do
@@ -188,18 +190,20 @@ end
 function obj:_waitKeywords(word, keyCode, char)
   -- if "delete" key is pressed, remove last character
   if keyCode == keyMap["delete"] then
-      if #word > 0 then
-          word = word:sub(1, -2)
-      end
-      return word, false -- pass the "delete" keystroke on to the application
+    if #word > 0 then
+      word = word:sub(1, -2)
+    end
+    self._candidate:update(word)
+    return word, false   -- pass the "delete" keystroke on to the application
   end
 
   word = word .. char
   self.logger.df("Word after appending:%s", word)
 
   if self:_shouldClear(keyCode) then
-      self._isWaitingKeywords = false
-      return word, false
+    self._isWaitingKeywords = false
+    self._candidate:clear()
+    return word, false
   end
 
   self.logger.df("Word to check if keyword: %s", word)
@@ -207,12 +211,14 @@ function obj:_waitKeywords(word, keyCode, char)
   -- finally, if "word" is a hotstring
   local replacement = self:_findKeyword(word)
   if replacement then
+    self._candidate:clear()
     -- disable listener not to capture keystroke
     self._isWaitingKeywords = false
     self:_expand(replacement, word)
     return word, true -- prevent the event not to type last charcter
   end
 
+  self._candidate:update(word)
   return word, false -- pass the event on to the application
 end
 
@@ -224,6 +230,7 @@ function obj:_handler(e)
   if char == obj.prefix then
     self._isWaitingKeywords = true
     self._word = ''
+    self._candidate:update("", obj.keywords)
   elseif obj._isWaitingKeywords then
     local word, isHit = self:_waitKeywords(self._word, keyCode, char)
     self._word = word
@@ -259,6 +266,9 @@ function obj:start()
   if obj.addHelp then
       obj.keywords["help"] = help
   end
+  obj._candidate = dofile(hs.spoons.scriptPath() .. "candidate.lua").new(
+    obj.keywords, obj.limitCandidate
+  )
   obj._eventListener:start()
   return obj
 end
