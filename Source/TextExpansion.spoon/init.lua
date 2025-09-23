@@ -55,7 +55,7 @@
 ---
 ---   Without preset character, macro is just removed.
 ---   e.g.
----   - `;greeting_with_macro`  -> hello 
+---   - `;greeting_with_macro`  -> hello
 ---   - `;+greeting_with_macro` -> hello NAME_ON_YOUR_CLIPBOARD
 ---
 ---   You can change preset character by setting `secondPrefixEnablingMacro`.
@@ -75,7 +75,7 @@ obj.license = "MIT - https://opensource.org/licenses/MIT"
 --- TextExpansion.logger
 --- Variable
 --- Logger object used within the Spoon. Can be accessed to set the default log level for the messages coming from the Spoon.
-obj.logger = hs.logger.new(debug.getinfo(1,'S').source)
+obj.logger = hs.logger.new(debug.getinfo(1, 'S').source)
 
 --- TextExpansion.keywords
 --- Variable
@@ -117,7 +117,7 @@ obj._isWaitingKeywords = false -- true when prefix input
 local keyMap = hs.keycodes.map
 
 obj._macros = {
-  clipboard = function ()
+  clipboard = function()
     return hs.pasteboard.getContents()
   end,
 }
@@ -150,9 +150,9 @@ function obj:_expand(replacement, word)
   -- since directly type "delete" seems to conflict with following keyStrokes,
   -- just select word to replace it by following keyStrokes
   for i = 1, #word do
-    hs.eventtap.keyStroke({'shift'}, "left", 0)
+    hs.eventtap.keyStroke({"shift"}, "left", 0)
   end
-  
+
   if replacement == '' then
     hs.eventtap.keyStroke({}, "Delete") -- just remove keyword
   else
@@ -165,11 +165,11 @@ end
 function obj:_shouldClear(keyCode)
   -- if one of these "navigational" keys is pressed
   if keyCode == keyMap["return"]
-    or keyCode == keyMap["space"]
-    or keyCode == keyMap["up"]
-    or keyCode == keyMap["down"]
-    or keyCode == keyMap["left"]
-    or keyCode == keyMap["right"] then
+      or keyCode == keyMap["space"]
+      or keyCode == keyMap["up"]
+      or keyCode == keyMap["down"]
+      or keyCode == keyMap["left"]
+      or keyCode == keyMap["right"] then
     return true
   end
   return false
@@ -177,14 +177,14 @@ end
 
 function obj:_findKeyword(word)
   local _word = self.secondPrefixEnablingMacro
-                 and word:gsub("^" .. self.secondPrefixEnablingMacro, "")
-                 or word
+    and word:gsub("^" .. self.secondPrefixEnablingMacro, "")
+    or word
   return self.keywords[_word]
 end
 
 function obj:_shouldExpandMacro(word)
   return self.secondPrefixEnablingMacro == ""
-    or self.secondPrefixEnablingMacro == word:sub(1, 1)
+      or self.secondPrefixEnablingMacro == word:sub(1, 1)
 end
 
 function obj:_waitKeywords(word, keyCode, char)
@@ -240,15 +240,15 @@ function obj:_handler(e)
   return false
 end
 
-obj._eventListener = hs.eventtap.new({hs.eventtap.event.types.keyDown}, function (e) return obj:_handler(e) end)
+obj._eventListener = hs.eventtap.new({ hs.eventtap.event.types.keyDown }, function(e) return obj:_handler(e) end)
 
 local function help()
-  local keyset={}
-  local n=0
+  local keyset = {}
+  local n = 0
 
-  for k,v in pairs(obj.keywords) do
-    n=n+1
-    keyset[n]=obj.prefix .. k
+  for k, v in pairs(obj.keywords) do
+    n = n + 1
+    keyset[n] = obj.prefix .. k
   end
   return table.concat(keyset, "\n")
 end
@@ -264,7 +264,7 @@ end
 ---  * TextExpansion
 function obj:start()
   if obj.addHelp then
-      obj.keywords["help"] = help
+    obj.keywords["help"] = help
   end
   obj._candidate = dofile(hs.spoons.scriptPath() .. "candidate.lua").new(
     obj.keywords, obj.limitCandidate
