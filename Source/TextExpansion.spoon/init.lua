@@ -106,7 +106,12 @@ obj.macroStartBy = '@'
 --- Add `help` keyword to show the list of available keywords.
 obj.addHelp = true
 
-obj._word = "" -- keyword stacked here
+--- TextExpansion.limitCandidate
+--- Variable
+--- Number of candidate to show
+obj.limitCandidate = 10
+
+obj._word = ""                 -- keyword stacked here
 obj._isWaitingKeywords = false -- true when prefix input
 
 local keyMap = hs.keycodes.map
